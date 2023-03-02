@@ -33,7 +33,7 @@
         alt="Stars"
         src="https://img.shields.io/github/stars/FPGA-James/dotfiles?colorA=363A4F&colorB=B7BDF8&logo=adafruit&logoColor=D9E0EE&style=for-the-badge">
     </a>
-    </a href="https://github.com/FPGA-James/dotfiles/network/members">
+    <a href="https://github.com/FPGA-James/dotfiles/network/members">
      <img
         alt="Forks"
         src="https://img.shields.io/github/forks/FPGA-James/dotfiles?colorA=363A4F&colorB=DDB6F2&logo=gitlfs&logoColor=D9E0EE&style=for-the-badge">
@@ -48,22 +48,22 @@
         alt="Contributors"
         src="https://img.shields.io/github/contributors/FPGA-James/dotfiles?colorA=363A4F&colorB=B5E8E0&logo=git&logoColor=D9E0EE&style=for-the-badge">
     </a>
+    <a>
     <img
         alt="Code Size"
         src="https://img.shields.io/github/languages/code-size/FPGA-James/dotfiles?colorA=363A4F&colorB=B7BDF8&logo=adafruit&logoColor=D9E0EE&style=for-the-badge">
     </a>
-    </a>
+    <a>
     <img
         alt="License"
         src="https://img.shields.io/github/license/FPGA-James/dotfiles?colorA=363A4F&colorB=DDB6F2&logo=gitlfs&logoColor=D9E0EE&style=for-the-badge">
-    </a>
     <br>
-    </a href="https://twitter.com/FpgaJ">
+    <a href="https://twitter.com/FpgaJ">
     <img
         alt="Twitter"
         src="https://img.shields.io/twitter/url?color=F5A97F&label=%40FPGA-James&logo=twitter&logoColor=F5A97F&style=for-the-badge&url=https%3A%2F%2Ftwitter.com%2FFpgaJ">
-    <a>
     </a>
+    <a>
     <img
         alt="Linked in"
         src="https://img.shields.io/twitter/url?color=B5E8E0&label=FPGA-James&logo=Linkedin&logoColor=B5E8E0&style=for-the-badge&url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjames-fleeting-8a2b4b76%2F">
