@@ -53,7 +53,7 @@
         alt="Code Size"
         src="https://img.shields.io/github/languages/code-size/FPGA-James/dotfiles?colorA=363A4F&colorB=B7BDF8&logo=adafruit&logoColor=D9E0EE&style=for-the-badge">
     </a>
-    <a href="https://github.com/FPGA-James/dotfiles/LICENSE.txt">
+    <a href="https://github.com/FPGA-James/dotfiles/blob/main/LICENSE.txt">
     <img
         alt="License"
         src="https://img.shields.io/github/license/FPGA-James/dotfiles?colorA=363A4F&colorB=DDB6F2&logo=gitlfs&logoColor=D9E0EE&style=for-the-badge">
