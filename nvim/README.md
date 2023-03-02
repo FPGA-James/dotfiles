@@ -56,7 +56,7 @@
     <a href="https://github.com/FPGA-James/dotfiles/blob/main/LICENSE.txt">
     <img
         alt="License"
-        src="https://img.shields.io/github/license/FPGA-James/dotfiles?colorA=363A4F&colorB=DDB6F2&logo=gitlfs&logoColor=D9E0EE&style=for-the-badge">
+        src="https://img.shields.io/github/license/FPGA-James/dotfiles?logo=gitlfs&logoColor=D9E0EE&style=for-the-badge">
     <br>
     <a href="https://twitter.com/FpgaJ">
     <img
