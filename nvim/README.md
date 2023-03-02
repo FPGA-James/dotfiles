@@ -48,8 +48,8 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/FPGA-James/dotfiles">
-    <img src="images/dotfile.png" alt="Logo" width="80" height="80">
+  <a href="https://github.com/FPGA-James/dotfiles/nvim">
+    <img src="https://github.com/FPGA-James/dotfiles/images/dotfiles.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">dotfiles</h3>
@@ -199,15 +199,10 @@ rel="nofollow">Wiki: Usage</a></p>
 </p>
 <br>
 
-<p align="center">
-    <img src="https://raw.githubusercontent.com/FPGA-James/blog-imgs/main/dap.png" alt="Debugging">
-    <em>Debugging</em>
-</p>
-<br>
 
 <p align="center">
-    <img src="https://raw.githubusercontent.com/FPGA-James/blog-imgs/main/gitui.png" alt="Lazygit">
-    <em>Lazygit with built-in Terminal</em>
+    <img src="https://raw.githubusercontent.com/FPGA-James/blog-imgs/main/gitui.png" alt="git">
+    <em>git with built-in Terminal</em>
 </p>
 <br>
 
