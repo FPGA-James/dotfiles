@@ -48,12 +48,12 @@
         alt="Contributors"
         src="https://img.shields.io/github/contributors/FPGA-James/dotfiles?colorA=363A4F&colorB=B5E8E0&logo=git&logoColor=D9E0EE&style=for-the-badge">
     </a>
-    <a>
+    <a href="https://github.com/FPGA-James/dotfiles">
     <img
         alt="Code Size"
         src="https://img.shields.io/github/languages/code-size/FPGA-James/dotfiles?colorA=363A4F&colorB=B7BDF8&logo=adafruit&logoColor=D9E0EE&style=for-the-badge">
     </a>
-    <a>
+    <a href="https://github.com/FPGA-James/dotfiles/LICENSE.txt">
     <img
         alt="License"
         src="https://img.shields.io/github/license/FPGA-James/dotfiles?colorA=363A4F&colorB=DDB6F2&logo=gitlfs&logoColor=D9E0EE&style=for-the-badge">
@@ -69,6 +69,8 @@
         src="https://img.shields.io/twitter/url?color=B5E8E0&label=FPGA-James&logo=Linkedin&logoColor=B5E8E0&style=for-the-badge&url=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fjames-fleeting-8a2b4b76%2F">
     </a>
 </p>
+
+_____
 
 <!-- PROJECT LOGO -->
 <br />
@@ -92,23 +94,29 @@
   </p>
 </div>
 
-<!---
-<h1 align="center">
-    NVIM Config aimed at HDL Development
+
+<p align="center">
     <br>
     <a href="https://github.com/neovim/neovim/releases/tag/stable">
     <img
         alt="NeoVim Version Capability"
-        src="https://img.shields.io/badge/Supports%20Nvim-v0.8-A6D895?style=for-the-badge&colorA=363A4F&logo=neovim&logoColor=D9E0EE">
+        src="https://img.shields.io/badge/Supports%20Nvim-v0.9-A6D895?style=plastic&colorA=363A4F&logo=neovim&logoColor=D9E0EE">
+    </a>
+    <a href="https://github.com/FPGA-James/dotfiles/tags">
+    <img
+        alt="Tag"
+        src="https://img.shields.io/github/v/tag/FPGA-James/dotfiles?color=A6D895&logo=git&logoColor=A6D895&style=plastic">
     </a>
     <a href="https://github.com/FPGA-James/dotfiles/releases">
     <img
-        alt="Release"
-        src="https://img.shields.io/github/v/release/FPGA-James/dotfiles.svg?style=for-the-badge&logo=github&color=F2CDCD&logoColor=D9E0EE&labelColor=363A4F">
+        alt="Relase"
+        src="https://img.shields.io/github/v/release/FPGA-James/dotfiles?include_prereleases&style=plastic">
     </a>
-</h1>
+</p>
 <br>
--->
+
+
+___
 
 <!-- TABLE OF CONTENTS -->
 <details>
