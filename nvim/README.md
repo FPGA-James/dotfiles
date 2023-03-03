@@ -76,7 +76,7 @@ _____
 <br />
 <div align="center">
   <a href="https://github.com/FPGA-James/dotfiles/tree/main/nvim">
-    <img src="https://github.com/FPGA-James/dotfiles/blob/main/images/dotfiles.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/FPGA-James/dotfiles/blob/main/images/dotfiles.png" alt="Logo" width="180" height="180">
   </a>
 
   <h3 align="center">dotfiles</h3>
