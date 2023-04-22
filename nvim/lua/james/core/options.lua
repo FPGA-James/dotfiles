@@ -39,6 +39,9 @@ opt.clipboard:append("unnamedplus")
 opt.splitright = true
 opt.splitright = true
 
+-- multi gutters
+vim.cmd[[ set signcolumn=auto:4]]
+
 opt.iskeyword:append("-")
 
 vim.g.mapleader=" "

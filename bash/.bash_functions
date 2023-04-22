@@ -1,0 +1,54 @@
+#!/bin/bash
+
+###########################################
+#NVIM Config switcher
+#
+###########################################
+alias nvim-lazy="NVIM_APPNAME=LazyVim nvim"
+alias nvim-chad="NVIM_APPNAME=NvChad nvim"
+alias nvim-astro="NVIM_APPNAME=AstroNvim nvim"
+
+function nvims() {
+  items=("default" "LazyVim" "NvChad" "AstroNvim")
+  config=$(printf "%s\n" "${items[@]}" | fzf --prompt=" Neovim Config  " --height=30% --layout=reverse --border --exit-0)
+  if [[ -z $config ]]; then
+    echo "Nothing selected"
+    return 0
+  elif [[ $config == "default" ]]; then
+    config=" "
+  fi
+  NVIM_APPNAME=$config nvim $@
+}
+
+
+#########################################
+# VUNIT Launcher
+#
+#########################################
+vunitfile="run.py"
+function vunit_launch() {
+    if [ -f "$vunitfile" ]; then
+        echo "file found"
+        list=( $(python3 run.py -l) ) ## get the list of tests
+        unset 'list[-1]' # remove the last lines of the outpout currebntly 3 elemts
+        unset 'list[-1]'
+        unset 'list[-1]'
+        list+=("all") # add an all element to the list
+        
+        # create a fzf prompt to selecte a test
+        config=$(printf "%s\n" "${list[@]}" | fzf --prompt="Test list" --height=30% --layout=reverse --border --exit-0)
+        
+        # prompt handler
+        if [[ -z $config ]]; then
+            echo "Nothing selected"
+            return 0
+        elif [[ $config == "all" ]]; then
+            config=" "
+        fi
+       # run the vunit test with the fzf output
+       python3 run.py $config
+    else
+        echo " not in the correct directory"
+    fi
+}
+

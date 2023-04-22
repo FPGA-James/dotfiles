@@ -1,0 +1,89 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+#### format
+format = """
+$directory \
+$git_branch \
+$git_status \
+$jobs \
+$time \
+$line_break \
+$character """
+####
+
+# Replace the '❯' symbol in the prompt with '➜'
+[character] # The name of the module we are configuring is 'character'
+#success_symbol = '[➜](bold green)' # The 'success_symbol' segment is being set to '➜' with the color 'bold green'
+vimcmd_symbol = '[V](bold green) '
+success_symbol = "[○](bold green) "
+error_symbol =   "[○](bold red) "
+
+
+# Disable the package module, hiding it from the prompt completely
+[package]
+disabled = true
+
+[battery]
+full_symbol = "🔋"
+charging_symbol = "🔌"
+discharging_symbol = "⚡"
+
+######### git_branch
+
+[git_branch]
+symbol = " "
+format = "[$symbol$branch]($style) "
+style = "bright-black"
+
+[git_status]
+conflicted = "= "
+untracked  = "? "
+stashed    = "$ "
+modified   = "! "
+staged     = "+ "
+renamed    = "~ "
+deleted    = "✘ "
+ahead = "▲${count}"
+behind = "▼${count}"
+diverged = "♦ ▲${ahead_count} ▼${behind_count}"
+style = "cyan"
+
+[git_state]
+format = '\([$state( $progress_current/$progress_total)]($style)\) '
+style = "bright-black"
+
+[status]
+style = "red"
+symbol = "✖"
+not_executable_symbol = "🚫"
+not_found_symbol = "🔍"
+sigint_symbol = "⚡"
+signal_symbol = "⚡"
+format = '[\[$symbol $common_meaning$signal_name$maybe_int\]]($style) '
+map_symbol = true
+disabled = false
+
+
+[directory]
+style = "cyan"
+read_only = ""
+truncate_to_repo = true
+truncation_length = 5
+truncation_symbol = " "
+format = "[$path]($style)[$read_only]($lock_style) "
+
+[jobs]
+symbol = ""
+style = "bold red"
+number_threshold = 1
+format = "[$symbol]($style)"
+
+[time]
+disabled = false
+symbol = "⌚"
+style = "bold white"
+format = "[$symbol$time]($style)"

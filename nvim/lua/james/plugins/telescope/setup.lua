@@ -102,26 +102,33 @@ telescope.setup{
                 },
             },
         },
-        project = {
-            base_dirs = {
-                {path = '~/Workspace/FPGA'},
-                {path = '~/Workspace/hw'},
-                {path = '~/Workspace/python'},
-                {path = '~/Workspace/rust'},
-                --{path = '~/dev/src5', max_depth = 2},
-            },
-            hidden_files = true, -- default: false
-            theme = "dropdown",
-            order_by = "asc",
-            search_by = "title",
-            sync_with_nvim_tree = true, -- default false
-        },
+        --project = {
+        --    base_dirs = {
+        --        {path = '~/Workspace/FPGA'},
+        --        {path = '~/Workspace/hw'},
+        --        {path = '~/Workspace/python'},
+        --        {path = '~/Workspace/rust'},
+        --        --{path = '~/dev/src5', max_depth = 2},
+        --    },
+         --   hidden_files = true, -- default: false
+        --    theme = "dropdown",
+        --    order_by = "asc",
+        --    search_by = "title",
+        --    sync_with_nvim_tree = true, -- default false
+        --},
         ["ui-select"] = {
             require("telescope.themes").get_dropdown {
               -- even more opts
             },
-          },
+        },
     },
+    media_files ={
+      -- filetypes whitelist
+      -- defaults to {"png", "jpg", "mp4", "webm", "pdf"}
+      filetypes = {"png", "webp", "jpg", "jpeg", "pdf", "svg"},
+      -- find command (defaults to `fd`)
+      find_cmd = "rg"
+    }
 }
 
 -- load extensions TODO
@@ -134,5 +141,5 @@ _ = telescope.load_extension "ui-select"
 _ = telescope.load_extension "git_worktree"
 --_ = telescope.load_extension "neoclip"
 _ = telescope.load_extension "luasnip"
-_ =telescope.load_extension('project')
-
+_ = telescope.load_extension('project')
+_ = telescope.load_extension('media_files')

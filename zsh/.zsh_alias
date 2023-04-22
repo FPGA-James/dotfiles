@@ -1,0 +1,56 @@
+alias v="fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim"
+
+# Terminal 
+alias c="clear"
+alias x="exit"
+alias e="code -n ~/ ~/.zshrc ~/.aliases ~/.colors ~/.hooks"
+alias r="source ~/.zshrc"
+
+# History
+alias h="history -10" # last 10 history commands
+alias hc="history -c" # clear history
+alias hg="history | grep " # +command
+
+# Easier navigation
+alias ..="cd .."
+alias ...="cd ../.."
+alias .3="cd ../../.."
+alias .4="cd ../../../.."
+
+# Git 
+alias gs='git status'
+
+# Always enable colored `grep` output
+# Note: `GREP_OPTIONS="--color=auto"` is deprecated, hence the alias usage.
+alias grep='grep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias egrep='egrep --color=auto'
+alias sgrep='grep -R -n -H -C 5 --exclude-dir={.git,.svn,CVS} '
+
+# ls: adding colors, verbose listign
+# and humanize the file sizes:
+alias ls="ls --color -l -h --group-directories-first"
+alias ll='ls -la'  ## Use a long listing format ##
+alias l.='ls -d .* --color=auto' ## Show hidden files ##
+
+
+# mkdir: create parent directories
+alias mkdir="mkdir -pv"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

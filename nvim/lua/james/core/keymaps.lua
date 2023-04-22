@@ -86,7 +86,7 @@ vim.keymap.set("n", "Q", "<nop>")             -- does nothing
 -- c                              -- p 
 -- d                              -- q 
 -- e                              -- r 
--- f Telescope                    -- s 
+-- f Telescope                    -- s sidebar 
 -- g                              -- t TODO
 -- h                              -- u undo tree
 -- i                              -- v 
@@ -120,21 +120,23 @@ vim.keymap.set("n", "gR", "<cmd>TroubleToggle lsp_references<cr>",bufopts)
 --------------------------------------------------------------------------------
 -- Telescope
 local builtin = require('telescope.builtin')
-vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
+vim.keymap.set('n', '<leader>ff', builtin.fd, {})
 vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
 vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 vim.keymap.set('n', '<leader>ft', builtin.tags, {})
 vim.keymap.set('n', '<leader>fe', "<cmd>lua require 'telescope'.extensions.file_browser.file_browser()<CR>", bufopts) -- open file finder telescope
---picker
-vim.keymap.set('n', '<leader>sl', "<cmd> SearchSession <cr>", bufopts)
-vim.keymap.set('n', '<leader>ss', "<cmd> SaveSession <cr>", bufopts)
+--vim.keymap.set('n', '<leader>sl', "<cmd> SearchSession <cr>", bufopts)
+--vim.keymap.set('n', '<leader>ss', "<cmd> SaveSession <cr>", bufopts)
+vim.keymap.set('n', '<leader>fp', "<cmd> lua require'telescope'.extensions.project.project{ } <CR>") 
 --------------------------------------------------------------------------------
 -- TODO
 vim.keymap.set("n", "<leader>tt", "<cmd>TODOTelescope<cr>",bufopts)
 vim.keymap.set("n", "<leader>tl", "<cmd>TODOLocationList<cr>",bufopts)  -- requires ripgrep
 vim.keymap.set("n", "<leader>tq", "<cmd>TODOQuickfixList<cr>",bufopts)  -- requires ripgrep
-
+--------------------------------------------------------------------------------
+-- sidebar
+vim.keymap.set("n", "<leader>ss", "<cmd>SidebarNvimToggle<cr>" ,bufopts)
 --------------------------------------------------------------------------------
 -- LSP TODO update key map
 vim.keymap.set('n', '<space>e', vim.diagnostic.open_float, opts)

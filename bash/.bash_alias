@@ -1,0 +1,36 @@
+alias lt='du -sh * | sort -h'
+alias gh='history|grep'
+alias cpv='rsync -ah --info=progress2'
+
+
+## navigation
+alias ..='cd ..'
+alias ...='cd ../..'
+alias .3='cd ../../..'
+alias .4='cd ../../../..'
+alias .5='cd ../../../../..'
+
+## outputs
+alias ls='ls --color=auto'
+alias l.='ls -d .* --color=auto'
+
+## usefull shortcuts
+alias c='clear'
+alias vim='nvims'
+alias mkdir='mkdir -pv'
+alias h='history'
+alias j='jobs -l'
+alias path='echo -e ${PATH//:/\\n}'
+alias now='date +"%T"'
+alias nowtime=now
+alias nowdate='date +"%d-%m-%Y"'
+alias mv='mv -i'
+alias cp='cp -i'
+alias ln='ln -i'
+
+## git 
+
+## grep
+alias grep='grep --color=auto'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
