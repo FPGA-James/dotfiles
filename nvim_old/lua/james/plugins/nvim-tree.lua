@@ -15,7 +15,10 @@ nvim_tree.setup {
         enable = true,
         update_cwd = true,
     },
-
+    view = {
+        width = 50,
+        side = "right",
+    },
     diagnostics = {
         enable = true,
         show_on_dirs = true,

@@ -42,7 +42,7 @@ return packer.startup(function(use)
     use("majutsushi/tagbar")                                                     --
     use("vimwiki/vimwiki")                                                       -- vimwiki
     use("nvim-tree/nvim-web-devicons")                                           -- vs-code like icons
-    use("nvim-lualine/lualine.nvim")                                             -- statusline
+    use{"nvim-lualine/lualine.nvim", config = [[require("james.plugins.lualine")]]}                                             -- statusline
     use('mbbill/undotree')                                                       -- undo tree
     use { "folke/trouble.nvim", requires = "kyazdani42/nvim-web-devicons" }      -- troube - shows lsp erros in window
     use("lukas-reineke/indent-blankline.nvim")                                   -- indentation
@@ -82,7 +82,20 @@ return packer.startup(function(use)
     use { "benfowler/telescope-luasnip.nvim" }
     --use {"ElPiloto/telescope-vimwiki.nvim", module = "telescope._extensions.vimwiki"}  -- vimwiki integration to telescope
     use { 'VonHeikemen/fine-cmdline.nvim', requires = { { 'MunifTanjim/nui.nvim' } } }
-
+    ---------------------------------------------------------------------------------
+    --Neo-tree
+    use {
+        "nvim-neo-tree/neo-tree.nvim",
+        branch = "v3.x",
+        requires = { 
+            "nvim-lua/plenary.nvim",
+            "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+            "MunifTanjim/nui.nvim",
+        }
+    }
+    ---------------------------------------------------------------------------------
+    -- EDGY
+    use {"folke/edgy.nvim"}
     ---------------------------------------------------------------------------------
     --LSP tools
     use { 'VonHeikemen/lsp-zero.nvim', -- lsp and auto complete

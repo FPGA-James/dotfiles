@@ -4398,7 +4398,6 @@ $(PLUGIN_TARGET)	zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions/Makefile	/^$(
 997	zsh/.oh-my-zsh/plugins/emoji/gemoji_db.json	/^, {$/;"	o
 998	zsh/.oh-my-zsh/plugins/emoji/gemoji_db.json	/^, {$/;"	o
 999	zsh/.oh-my-zsh/plugins/emoji/gemoji_db.json	/^, {$/;"	o
-:gift_heart: Support	NvChad/.github/README.md	/^## :gift_heart: Support$/;"	s
 <c-\\>	tmux/plugins/vim-tmux-navigator/plugin/tmux_navigator.vim	/^  noremap <silent> <c-\\> :<C-U>TmuxNavigatePrevious<cr>$/;"	m
 <c-h>	tmux/plugins/vim-tmux-navigator/plugin/tmux_navigator.vim	/^  noremap <silent> <c-h> :<C-U>TmuxNavigateLeft<cr>$/;"	m
 <c-j>	tmux/plugins/vim-tmux-navigator/plugin/tmux_navigator.vim	/^  noremap <silent> <c-j> :<C-U>TmuxNavigateDown<cr>$/;"	m
@@ -4439,6 +4438,7 @@ Aliases	zsh/.oh-my-zsh/plugins/bundler/README.md	/^## Aliases$/;"	s	chapter:Bund
 Aliases	zsh/.oh-my-zsh/plugins/cakephp3/README.md	/^## Aliases$/;"	s	chapter:cakephp3 plugin
 Aliases	zsh/.oh-my-zsh/plugins/common-aliases/README.md	/^## Aliases$/;"	s	chapter:Common Aliases Plugin
 Aliases	zsh/.oh-my-zsh/plugins/composer/README.md	/^## Aliases$/;"	s	chapter:composer
+Aliases	zsh/.oh-my-zsh/plugins/dbt/README.md	/^## Aliases$/;"	s	chapter:dbt plugin
 Aliases	zsh/.oh-my-zsh/plugins/deno/README.md	/^## Aliases$/;"	s	chapter:Deno Plugin
 Aliases	zsh/.oh-my-zsh/plugins/dnf/README.md	/^## Aliases$/;"	s	chapter:dnf plugin
 Aliases	zsh/.oh-my-zsh/plugins/docker-compose/README.md	/^## Aliases$/;"	s	chapter:Docker-compose
@@ -4609,7 +4609,6 @@ Commands	zsh/.oh-my-zsh/plugins/macos/README.md	/^## Commands$/;"	s	chapter:MacO
 Commands	zsh/.oh-my-zsh/plugins/macports/README.md	/^## Commands$/;"	s	chapter:Macports plugin
 Commands	zsh/.oh-my-zsh/plugins/pow/README.md	/^## Commands$/;"	s	chapter:pow plugin
 Commands	zsh/.oh-my-zsh/plugins/urltools/README.md	/^## Commands$/;"	s	chapter:URLTools plugin
-Comment.nvim	NvChad/lazy-lock.json	/^  "Comment.nvim": { "branch": "master", "commit": "a89339ffbee677ab0521a483b6dac7e2e67c907e" },$/;"	o
 Commit Guidelines	zsh/.oh-my-zsh/CONTRIBUTING.md	/^## Commit Guidelines$/;"	s	chapter:CONTRIBUTING GUIDELINES
 Common Aliases	zsh/.oh-my-zsh/plugins/debian/README.md	/^## Common Aliases$/;"	s	chapter:debian
 Common Aliases Plugin	zsh/.oh-my-zsh/plugins/common-aliases/README.md	/^# Common Aliases Plugin$/;"	c
@@ -4648,7 +4647,6 @@ Contributors	zsh/.oh-my-zsh/plugins/kube-ps1/README.md	/^## Contributors$/;"	s	c
 Contributors	zsh/.oh-my-zsh/plugins/oc/README.md	/^## Contributors$/;"	s	chapter:OC - OpenShift CLI
 Controller	zsh/.oh-my-zsh/plugins/juju/README.md	/^### Controller$/;"	S	section:juju plugin""Aliases
 Cpanm	zsh/.oh-my-zsh/plugins/cpanm/README.md	/^# Cpanm$/;"	c
-Credits	NvChad/.github/README.md	/^## Credits$/;"	s
 Credits	zsh/.oh-my-zsh/plugins/hitchhiker/README.md	/^## Credits$/;"	s	chapter:hitchhiker
 Credits	zsh/.oh-my-zsh/plugins/keychain/README.md	/^## Credits$/;"	s	chapter:keychain plugin
 Credits	zsh/.oh-my-zsh/plugins/marktext/README.md	/^### Credits$/;"	S	section:marktext
@@ -4703,6 +4701,7 @@ Developer-visible changes:	zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 Development	zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions/README.md	/^## Development$/;"	s	chapter:zsh-autosuggestions
 Dirhistory plugin	zsh/.oh-my-zsh/plugins/dirhistory/README.md	/^# Dirhistory plugin$/;"	c
 Dirpersist plugin	zsh/.oh-my-zsh/plugins/dirpersist/README.md	/^# Dirpersist plugin$/;"	c
+Disable GNU ls in macOS and freeBSD systems	zsh/.oh-my-zsh/README.md	/^### Disable GNU ls in macOS and freeBSD systems$/;"	S	section:Advanced Topics
 Disable Shell-Completion	tmuxifier/README.md	/^### Disable Shell-Completion$/;"	S	section:Tmuxifier [![Build Status](https://api.travis-ci.org/jimeh/tmuxifier.svg)](https://travis-ci.org/jimeh/tmuxifier)""Configure & Customize
 Disable While Zoomed	tmux/plugins/vim-tmux-navigator/README.md	/^##### Disable While Zoomed$/;"	T	subsubsection:Vim Tmux Navigator""Configuration""Custom Key Bindings""Vim
 Disable Wrapping	tmux/plugins/vim-tmux-navigator/README.md	/^#### Disable Wrapping$/;"	t	subsection:Vim Tmux Navigator""Configuration""Additional Customization
@@ -4765,7 +4764,6 @@ Environment settings	zsh/.oh-my-zsh/plugins/rails/README.md	/^### Environment se
 Environment variables	zsh/.oh-my-zsh/plugins/github/README.md	/^#### Environment variables$/;"	t	subsection:github plugin""Installation""Configuration
 Example	tmuxifier/README.md	/^## Example$/;"	s	chapter:Tmuxifier [![Build Status](https://api.travis-ci.org/jimeh/tmuxifier.svg)](https://travis-ci.org/jimeh/tmuxifier)
 Example	zsh/.oh-my-zsh/plugins/z/README.md	/^### Example$/;"	S	chapter:z - jump around
-Example_config	NvChad/lua/custom/README.md	/^# Example_config$/;"	c
 Examples	zsh/.oh-my-zsh/plugins/alias-finder/README.md	/^## Examples$/;"	s	chapter:alias-finder plugin
 Examples	zsh/.oh-my-zsh/plugins/droplr/README.md	/^## Examples$/;"	s	chapter:droplr
 Examples	zsh/.oh-my-zsh/plugins/git-prompt/README.md	/^## Examples$/;"	s	chapter:git-prompt plugin
@@ -4810,11 +4808,11 @@ Fixing tmux, screen and linux vt	zsh/.oh-my-zsh/plugins/zsh-navigation-tools/REA
 Flutter plugin	zsh/.oh-my-zsh/plugins/flutter/README.md	/^## Flutter plugin$/;"	s
 FluxCD plugin	zsh/.oh-my-zsh/plugins/fluxcd/README.md	/^# FluxCD plugin$/;"	c
 Follow Us	zsh/.oh-my-zsh/README.md	/^## Follow Us$/;"	s
+For [Oh My Zsh](http://ohmyz.sh/) users	zsh/.oh-my-zsh/plugins/z/MANUAL.md	/^### For [Oh My Zsh](http:\/\/ohmyz.sh\/) users$/;"	S	section:Zsh-z""Installation
 For [Zim](https://github.com/zimfw/zimfw)	zsh/.oh-my-zsh/plugins/z/MANUAL.md	/^### For [Zim](https:\/\/github.com\/zimfw\/zimfw)$/;"	S	section:Zsh-z""Installation
 For [Zinit](https://github.com/zdharma-continuum/zinit) users	zsh/.oh-my-zsh/plugins/z/MANUAL.md	/^### For [Zinit](https:\/\/github.com\/zdharma-continuum\/zinit) users$/;"	S	section:Zsh-z""Installation
 For [Znap](https://github.com/marlonrichert/zsh-snap) users	zsh/.oh-my-zsh/plugins/z/MANUAL.md	/^### For [Znap](https:\/\/github.com\/marlonrichert\/zsh-snap) users$/;"	S	section:Zsh-z""Installation
 For [antigen](https://github.com/zsh-users/antigen) users	zsh/.oh-my-zsh/plugins/z/MANUAL.md	/^### For [antigen](https:\/\/github.com\/zsh-users\/antigen) users$/;"	S	section:Zsh-z""Installation
-For [oh-my-zsh](http://ohmyz.sh/) users	zsh/.oh-my-zsh/plugins/z/MANUAL.md	/^### For [oh-my-zsh](http:\/\/ohmyz.sh\/) users$/;"	S	section:Zsh-z""Installation
 For [prezto](https://github.com/sorin-ionescu/prezto) users	zsh/.oh-my-zsh/plugins/z/MANUAL.md	/^### For [prezto](https:\/\/github.com\/sorin-ionescu\/prezto) users$/;"	S	section:Zsh-z""Installation
 For [zcomet](https://github.com/agkozak/zcomet) users	zsh/.oh-my-zsh/plugins/z/MANUAL.md	/^### For [zcomet](https:\/\/github.com\/agkozak\/zcomet) users$/;"	S	section:Zsh-z""Installation
 For [zgen](https://github.com/tarjoilija/zgen) users	zsh/.oh-my-zsh/plugins/z/MANUAL.md	/^### For [zgen](https:\/\/github.com\/tarjoilija\/zgen) users$/;"	S	section:Zsh-z""Installation
@@ -4895,13 +4893,11 @@ Hacking on zsh-syntax-highlighting itself	zsh/.oh-my-zsh/custom/plugins/zsh-synt
 Hanami Plugin	zsh/.oh-my-zsh/plugins/hanami/README.md	/^# Hanami Plugin$/;"	c
 Hasura plugin	zsh/.oh-my-zsh/plugins/hasura/README.md	/^# Hasura plugin$/;"	c
 Helm plugin	zsh/.oh-my-zsh/plugins/helm/README.md	/^# Helm plugin$/;"	c
-Help	NvChad/.github/CONTRIBUTING.md	/^## Help$/;"	s	chapter:[CONTRIBUTING](https://nvchad.github.io/contribute)
 Help, tpm not working!	tmux/plugins/tpm/docs/tpm_not_working.md	/^# Help, tpm not working!$/;"	c
 Helper utilities	zsh/.oh-my-zsh/plugins/kube-ps1/README.md	/^## Helper utilities$/;"	s	chapter:kube-ps1: Kubernetes prompt for bash and zsh
 Heroku	zsh/.oh-my-zsh/plugins/heroku/README.md	/^# Heroku$/;"	c
 Highlighter-independent settings	zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/docs/highlighters.md	/^Highlighter-independent settings$/;"	s	chapter:zsh-syntax-highlighting / highlighters
 Highlighting test	zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/tests/README.md	/^Highlighting test$/;"	s	chapter:zsh-syntax-highlighting / tests
-History	NvChad/.github/README.md	/^## History$/;"	s
 History	zsh/.oh-my-zsh/plugins/history-substring-search/README.md	/^History$/;"	s	chapter:zsh-history-substring-search
 History	zsh/.oh-my-zsh/plugins/per-directory-history/README.md	/^## History$/;"	s
 History	zsh/.oh-my-zsh/plugins/vi-mode/README.md	/^### History$/;"	S	section:vi-mode plugin""Key bindings
@@ -4917,7 +4913,6 @@ How to create Tmux plugins	tmux/plugins/tpm/docs/how_to_create_plugin.md	/^# How
 How to implement a new highlighter	zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/docs/highlighters.md	/^How to implement a new highlighter$/;"	s	chapter:zsh-syntax-highlighting / highlighters
 How to install	zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/INSTALL.md	/^How to install$/;"	s
 How to install	zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/README.md	/^How to install$/;"	s	chapter:zsh-syntax-highlighting [![Build Status][build-status-image]][build-status]
-How to remove or edit commits from your PR	NvChad/.github/CONTRIBUTING.md	/^## How to remove or edit commits from your PR$/;"	s	chapter:[CONTRIBUTING](https://nvchad.github.io/contribute)
 How to tweak	zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/README.md	/^How to tweak$/;"	s	chapter:zsh-syntax-highlighting [![Build Status][build-status-image]][build-status]
 How to tweak highlighters	zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/docs/highlighters.md	/^How to tweak highlighters$/;"	s	chapter:zsh-syntax-highlighting / highlighters
 How to tweak it	zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/docs/highlighters/brackets.md	/^### How to tweak it$/;"	S	section:zsh-syntax-highlighting / highlighters / brackets
@@ -4963,6 +4958,7 @@ Installation	zsh/.oh-my-zsh/plugins/github/README.md	/^## Installation$/;"	s	cha
 Installation	zsh/.oh-my-zsh/plugins/mix-fast/README.md	/^## Installation$/;"	s	chapter:mix-fast
 Installation	zsh/.oh-my-zsh/plugins/pipenv/README.md	/^## Installation$/;"	s	chapter:Pipenv
 Installation	zsh/.oh-my-zsh/plugins/rake-fast/README.md	/^## Installation$/;"	s	chapter:rake-fast
+Installation	zsh/.oh-my-zsh/plugins/starship/README.md	/^# Installation$/;"	c
 Installation	zsh/.oh-my-zsh/plugins/z/MANUAL.md	/^## Installation$/;"	s	chapter:Zsh-z
 Installation	zsh/.oh-my-zsh/plugins/zsh-interactive-cd/README.md	/^## Installation$/;"	s	chapter:zsh-interactive-cd
 Installation Problems	zsh/.oh-my-zsh/README.md	/^### Installation Problems$/;"	S	section:Advanced Topics
@@ -4974,6 +4970,7 @@ Installing plugins	tmux/plugins/tpm/docs/managing_plugins_via_cmd_line.md	/^### 
 Instructions	zsh/.oh-my-zsh/plugins/keychain/README.md	/^## Instructions$/;"	s	chapter:keychain plugin
 Internal functions	zsh/.oh-my-zsh/plugins/fastfile/README.md	/^### Internal functions$/;"	S	section:Fastfile plugin""Functions
 Introduction	zsh/.oh-my-zsh/plugins/ansible/README.md	/^## Introduction$/;"	s	chapter:ansible plugin
+Introduction	zsh/.oh-my-zsh/plugins/dbt/README.md	/^## Introduction$/;"	s	chapter:dbt plugin
 Introduction	zsh/.oh-my-zsh/plugins/frontend-search/README.md	/^## Introduction$/;"	s
 Introduction	zsh/.oh-my-zsh/plugins/zsh-navigation-tools/README.md	/^## Introduction$/;"	s	chapter:Zsh Navigation Tools
 Invoke plugin	zsh/.oh-my-zsh/plugins/invoke/README.md	/^# Invoke plugin$/;"	c
@@ -5029,7 +5026,6 @@ List of Aliases	zsh/.oh-my-zsh/plugins/rails/README.md	/^## List of Aliases$/;"	
 Listing files inside a packed file	zsh/.oh-my-zsh/plugins/common-aliases/README.md	/^### Listing files inside a packed file$/;"	S	section:Common Aliases Plugin""File extension aliases
 Local Status Symbols	zsh/.oh-my-zsh/plugins/git-prompt/README.md	/^### Local Status Symbols$/;"	S	section:git-prompt plugin""Prompt Structure
 Low `$KEYTIMEOUT`	zsh/.oh-my-zsh/plugins/vi-mode/README.md	/^### Low `$KEYTIMEOUT`$/;"	S	section:vi-mode plugin""Known issues
-LuaSnip	NvChad/lazy-lock.json	/^  "LuaSnip": { "branch": "master", "commit": "a6355b12a3b7da0aef71f02560e17ff480182b97" },$/;"	o
 MacOS	zsh/.oh-my-zsh/plugins/kube-ps1/README.md	/^### MacOS$/;"	S	section:kube-ps1: Kubernetes prompt for bash and zsh""Installing
 MacOS	zsh/.oh-my-zsh/plugins/vscode/README.md	/^### MacOS$/;"	S	section:VS Code""Requirements
 MacOS plugin	zsh/.oh-my-zsh/plugins/macos/README.md	/^# MacOS plugin$/;"	c
@@ -5039,6 +5035,7 @@ Main branch preference	zsh/.oh-my-zsh/plugins/git/README.md	/^### Main branch pr
 Main commands	zsh/.oh-my-zsh/plugins/suse/README.md	/^## Main commands$/;"	s	chapter:suse
 Maintainer	zsh/.oh-my-zsh/plugins/ansible/README.md	/^## Maintainer$/;"	s	chapter:ansible plugin
 Maintainer	zsh/.oh-my-zsh/plugins/branch/README.md	/^## Maintainer$/;"	s	chapter:Branch plugin
+Maintainer	zsh/.oh-my-zsh/plugins/dbt/README.md	/^## Maintainer$/;"	s	chapter:dbt plugin
 Maintainer	zsh/.oh-my-zsh/plugins/please/README.md	/^## Maintainer$/;"	s	chapter:please plugin
 Maintainer	zsh/.oh-my-zsh/plugins/shell-proxy/README.md	/^## Maintainer$/;"	s	chapter:shell-proxy plugin
 Maintainers	zsh/.oh-my-zsh/plugins/ember-cli/README.md	/^## Maintainers$/;"	s	chapter:Ember CLI
@@ -5118,7 +5115,6 @@ Notes	zsh/.oh-my-zsh/plugins/sprunge/README.md	/^## Notes$/;"	s	chapter:Sprunge 
 Notes	zsh/.oh-my-zsh/plugins/thefuck/README.md	/^## Notes$/;"	s	chapter:The Fuck
 Notice <!-- omit in toc -->	zsh/.oh-my-zsh/README.md	/^#### Notice <!-- omit in toc -->$/;"	t	subsection:Advanced Topics""Skip aliases
 Notice about an improbable-but-not-impossible forward incompatibility	zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/changelog.md	/^## Notice about an improbable-but-not-impossible forward incompatibility$/;"	s	chapter:Changes in 0.8.0-alpha1-pre-redrawhook
-NvChad install for contributors	NvChad/.github/CONTRIBUTING.md	/^## NvChad install for contributors$/;"	s	chapter:[CONTRIBUTING](https://nvchad.github.io/contribute)
 OC - OpenShift CLI	zsh/.oh-my-zsh/plugins/oc/README.md	/^# OC - OpenShift CLI$/;"	c
 OPTIONS	zsh/.oh-my-zsh/plugins/scd/README.md	/^## OPTIONS$/;"	s	chapter:scd - smart change of directory
 OS X Homebrew Setup	zsh/.oh-my-zsh/plugins/git-extras/README.md	/^### OS X Homebrew Setup$/;"	S	section:git-extras""Setup notes
@@ -5176,7 +5172,6 @@ Plugin commands	zsh/.oh-my-zsh/plugins/iterm2/README.md	/^## Plugin commands$/;"
 Plugin commands	zsh/.oh-my-zsh/plugins/torrent/README.md	/^## Plugin commands$/;"	s	chapter:torrent
 Plugin options	zsh/.oh-my-zsh/plugins/aws/README.md	/^## Plugin options$/;"	s	chapter:aws
 Plugins	zsh/.oh-my-zsh/README.md	/^### Plugins$/;"	S	section:Using Oh My Zsh
-Plugins list	NvChad/.github/README.md	/^## Plugins list$/;"	s
 Poetry Plugin	zsh/.oh-my-zsh/plugins/poetry/README.md	/^# Poetry Plugin$/;"	c
 Post Callout	zsh/.oh-my-zsh/plugins/vim-interaction/README.md	/^## Post Callout ##$/;"	s	chapter:Vim Interaction
 Postgres plugin	zsh/.oh-my-zsh/plugins/postgres/README.md	/^# Postgres plugin$/;"	c
@@ -5297,7 +5292,6 @@ Setup	zsh/.oh-my-zsh/plugins/wd/README.md	/^## Setup$/;"	s	chapter:wd
 Setup	zsh/.oh-my-zsh/plugins/z/README.md	/^### Setup$/;"	S	chapter:z - jump around
 Setup notes	zsh/.oh-my-zsh/plugins/git-extras/README.md	/^## Setup notes$/;"	s	chapter:git-extras
 Shellenv	zsh/.oh-my-zsh/plugins/brew/README.md	/^## Shellenv$/;"	s	chapter:brew plugin
-Showcase	NvChad/.github/README.md	/^## Showcase$/;"	s
 Sigstore plugin	zsh/.oh-my-zsh/plugins/sigstore/README.md	/^# Sigstore plugin$/;"	c
 Singlechar plugin	zsh/.oh-my-zsh/plugins/singlechar/README.md	/^# Singlechar plugin$/;"	c
 Skaffold plugin (Autocompletion)	zsh/.oh-my-zsh/plugins/skaffold/README.md	/^# Skaffold plugin (Autocompletion)$/;"	c
@@ -5356,11 +5350,9 @@ The Silver Searcher	zsh/.oh-my-zsh/plugins/ag/README.md	/^# The Silver Searcher$
 The `main` highlighter	zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/HACKING.md	/^The `main` highlighter$/;"	s	chapter:Hacking on zsh-syntax-highlighting itself
 Theme	zsh/.oh-my-zsh/plugins/aws/README.md	/^## Theme$/;"	s	chapter:aws
 Theme	zsh/.oh-my-zsh/plugins/azure/README.md	/^## Theme$/;"	s	chapter:azure
-Theme Showcase	NvChad/.github/README.md	/^## Theme Showcase$/;"	s
 Theme example	zsh/.oh-my-zsh/plugins/jenv/README.md	/^## Theme example$/;"	s	chapter:jenv plugin
 Themes	zsh/.oh-my-zsh/README.md	/^### Themes$/;"	S	section:Using Oh My Zsh
 Themes Plugin	zsh/.oh-my-zsh/plugins/themes/README.md	/^# Themes Plugin$/;"	c
-Things to know before contributing	NvChad/.github/CONTRIBUTING.md	/^## Things to know before contributing$/;"	s	chapter:[CONTRIBUTING](https://nvchad.github.io/contribute)
 Thor plugin	zsh/.oh-my-zsh/plugins/thor/README.md	/^# Thor plugin$/;"	c
 Tips	tmuxifier/README.md	/^## Tips$/;"	s	chapter:Tmuxifier [![Build Status](https://api.travis-ci.org/jimeh/tmuxifier.svg)](https://travis-ci.org/jimeh/tmuxifier)
 Tips	zsh/.oh-my-zsh/plugins/spring/README.md	/^## Tips$/;"	s	chapter:Spring Boot oh-my-zsh plugin
@@ -5393,7 +5385,6 @@ Troubleshooting	tmux/plugins/vim-tmux-navigator/README.md	/^Troubleshooting$/;"	
 Troubleshooting	zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions/README.md	/^## Troubleshooting$/;"	s	chapter:zsh-autosuggestions
 Tugboat plugin	zsh/.oh-my-zsh/plugins/tugboat/README.md	/^# Tugboat plugin$/;"	c
 UFW plugin	zsh/.oh-my-zsh/plugins/ufw/README.md	/^# UFW plugin$/;"	c
-UI related plugins used	NvChad/.github/README.md	/^## UI related plugins used$/;"	s
 URLTools plugin	zsh/.oh-my-zsh/plugins/urltools/README.md	/^# URLTools plugin$/;"	c
 Ubuntu plugin	zsh/.oh-my-zsh/plugins/ubuntu/README.md	/^# Ubuntu plugin$/;"	c
 Unattended install	zsh/.oh-my-zsh/README.md	/^#### Unattended install$/;"	t	subsection:Advanced Topics""Advanced Installation
@@ -5502,7 +5493,6 @@ Volunteer	zsh/.oh-my-zsh/CONTRIBUTING.md	/^## Volunteer$/;"	s	chapter:CONTRIBUTI
 Vundle plugin	zsh/.oh-my-zsh/plugins/vundle/README.md	/^# Vundle plugin$/;"	c
 WP-CLI	zsh/.oh-my-zsh/plugins/wp-cli/README.md	/^# WP-CLI$/;"	c
 Watson	zsh/.oh-my-zsh/plugins/watson/README.md	/^# Watson$/;"	c
-What is it?	NvChad/.github/README.md	/^## What is it?$/;"	s
 What it does:	zsh/.oh-my-zsh/plugins/term_tab/README.md	/^## What it does:$/;"	s	chapter:term_tab plugin
 Why must `zsh-syntax-highlighting.zsh` be sourced at the end of the `.zshrc` file?	zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/README.md	/^### Why must `zsh-syntax-highlighting.zsh` be sourced at the end of the `.zshrc` file?$/;"	S	section:zsh-syntax-highlighting [![Build Status][build-status-image]][build-status]""FAQ
 Widget Mapping	zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions/README.md	/^### Widget Mapping$/;"	S	section:zsh-autosuggestions""Configuration
@@ -5532,8 +5522,18 @@ Zsh	zsh/.oh-my-zsh/plugins/kube-ps1/README.md	/^#### Zsh$/;"	t	subsection:kube-p
 Zsh Navigation Tools	zsh/.oh-my-zsh/plugins/zsh-navigation-tools/README.md	/^# Zsh Navigation Tools$/;"	c
 Zsh Plugin Managers	zsh/.oh-my-zsh/plugins/kube-ps1/README.md	/^### Zsh Plugin Managers$/;"	S	section:kube-ps1: Kubernetes prompt for bash and zsh""Installing
 Zsh-z	zsh/.oh-my-zsh/plugins/z/MANUAL.md	/^# Zsh-z$/;"	c
-["<S-Tab>"]	NvChad/lua/plugins/configs/cmp.lua	/^    ["<S-Tab>"] = cmp.mapping(function(fallback)$/;"	f
-["<Tab>"]	NvChad/lua/plugins/configs/cmp.lua	/^    ["<Tab>"] = cmp.mapping(function(fallback)$/;"	f
+["<c-q>"]	nvim/lua/james/plugins/edgy/init.lua	/^    ["<c-q>"] = function(win)$/;"	f
+["<c-w>	nvim/lua/james/plugins/edgy/init.lua	/^    ["<c-w>="] = function(win)$/;"	f
+["<c-w>+"]	nvim/lua/james/plugins/edgy/init.lua	/^    ["<c-w>+"] = function(win)$/;"	f
+["<c-w>-"]	nvim/lua/james/plugins/edgy/init.lua	/^    ["<c-w>-"] = function(win)$/;"	f
+["<c-w><lt>"]	nvim/lua/james/plugins/edgy/init.lua	/^    ["<c-w><lt>"] = function(win)$/;"	f
+["<c-w>>"]	nvim/lua/james/plugins/edgy/init.lua	/^    ["<c-w>>"] = function(win)$/;"	f
+["Q"]	nvim/lua/james/plugins/edgy/init.lua	/^    ["Q"] = function(win)$/;"	f
+["[W"]	nvim/lua/james/plugins/edgy/init.lua	/^    ["[W"] = function(win)$/;"	f
+["[w"]	nvim/lua/james/plugins/edgy/init.lua	/^    ["[w"] = function(win)$/;"	f
+["]W"]	nvim/lua/james/plugins/edgy/init.lua	/^    ["]W"] = function(win)$/;"	f
+["]w"]	nvim/lua/james/plugins/edgy/init.lua	/^    ["]w"] = function(win)$/;"	f
+["q"]	nvim/lua/james/plugins/edgy/init.lua	/^    ["q"] = function(win)$/;"	f
 ['<C-b>']	nvim/lua/james/plugins/cmp.lua	/^    ['<C-b>'] = cmp.mapping(function(fallback)$/;"	f
 ['<C-d>']	nvim/lua/james/plugins/cmp.lua	/^    ['<C-d>'] = cmp.mapping(function(fallback)$/;"	f
 ['<S-Tab>']	nvim/lua/james/plugins/cmp.lua	/^    ['<S-Tab>'] = cmp.mapping(function(fallback)$/;"	f
@@ -5541,12 +5541,13 @@ Zsh-z	zsh/.oh-my-zsh/plugins/z/MANUAL.md	/^# Zsh-z$/;"	c
 [Antibody](https://github.com/getantibody/antibody)	zsh/.oh-my-zsh/plugins/wd/README.md	/^### [Antibody](https:\/\/github.com\/getantibody\/antibody)$/;"	S	section:wd""Setup
 [Antigen](https://github.com/zsh-users/antigen)	zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/INSTALL.md	/^#### [Antigen](https:\/\/github.com\/zsh-users\/antigen)$/;"	t	subsection:How to install""With a plugin manager
 [Antigen](https://github.com/zsh-users/antigen)	zsh/.oh-my-zsh/plugins/wd/README.md	/^### [Antigen](https:\/\/github.com\/zsh-users\/antigen)$/;"	S	section:wd""Setup
-[CONTRIBUTING](https://nvchad.github.io/contribute)	NvChad/.github/CONTRIBUTING.md	/^# [CONTRIBUTING](https:\/\/nvchad.github.io\/contribute)$/;"	c
 [Deepankumar](https://github.com/deepan10)	zsh/.oh-my-zsh/plugins/ansible/README.md	/^### [Deepankumar](https:\/\/github.com\/deepan10) $/;"	S	section:ansible plugin""Maintainer
 [Fig](https://fig.io)	zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/INSTALL.md	/^#### [Fig](https:\/\/fig.io)$/;"	t	subsection:How to install""With a plugin manager
 [Fig](https://fig.io)	zsh/.oh-my-zsh/plugins/wd/README.md	/^### [Fig](https:\/\/fig.io)$/;"	S	section:wd""Setup
 [Oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)	zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/INSTALL.md	/^#### [Oh-my-zsh](https:\/\/github.com\/robbyrussell\/oh-my-zsh)$/;"	t	subsection:How to install""With a plugin manager
 [Prezto](https://github.com/sorin-ionescu/prezto)	zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/INSTALL.md	/^#### [Prezto](https:\/\/github.com\/sorin-ionescu\/prezto)$/;"	t	subsection:How to install""With a plugin manager
+[msempere](https://github.com/msempere)	zsh/.oh-my-zsh/plugins/dbt/README.md	/^### [msempere](https:\/\/github.com\/msempere)$/;"	S	section:dbt plugin""Maintainer
+[oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)	zsh/.oh-my-zsh/plugins/starship/README.md	/^## [oh-my-zsh](https:\/\/github.com\/ohmyzsh\/ohmyzsh)$/;"	s	chapter:Installation
 [oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)	zsh/.oh-my-zsh/plugins/wd/README.md	/^### [oh-my-zsh](https:\/\/github.com\/ohmyzsh\/ohmyzsh)$/;"	S	section:wd""Setup
 [tmux](https://github.com/tmux/tmux/wiki)	tmux/plugins/tmux/INSTALL.md	/^### [tmux](https:\/\/github.com\/tmux\/tmux\/wiki)$/;"	S
 [zgen](https://github.com/tarjoilija/zgen)	zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/INSTALL.md	/^#### [zgen](https:\/\/github.com\/tarjoilija\/zgen)$/;"	t	subsection:How to install""With a plugin manager
@@ -5932,6 +5933,9 @@ _rake	zsh/.oh-my-zsh/plugins/rake-fast/rake-fast.plugin.zsh	/^_rake () {$/;"	f
 _rake_command	zsh/.oh-my-zsh/plugins/rails/rails.plugin.zsh	/^function _rake_command () {$/;"	f
 _rake_does_task_list_need_generating	zsh/.oh-my-zsh/plugins/rake-fast/rake-fast.plugin.zsh	/^_rake_does_task_list_need_generating () {$/;"	f
 _rake_generate	zsh/.oh-my-zsh/plugins/rake-fast/rake-fast.plugin.zsh	/^_rake_generate () {$/;"	f
+_rake_tasks_missing	zsh/.oh-my-zsh/plugins/rake-fast/rake-fast.plugin.zsh	/^_rake_tasks_missing () {$/;"	f
+_rake_tasks_version_changed	zsh/.oh-my-zsh/plugins/rake-fast/rake-fast.plugin.zsh	/^_rake_tasks_version_changed () {$/;"	f
+_rakefile_has_changes	zsh/.oh-my-zsh/plugins/rake-fast/rake-fast.plugin.zsh	/^_rakefile_has_changes () {$/;"	f
 _rbfu_rubies_print	zsh/.oh-my-zsh/plugins/rbfu/rbfu.plugin.zsh	/^function _rbfu_rubies_print() {$/;"	f
 _rbwpw	zsh/.oh-my-zsh/plugins/rbw/rbw.plugin.zsh	/^function _rbwpw {$/;"	f
 _retry_clipboard_detection_or_fail	zsh/.oh-my-zsh/lib/clipboard.zsh	/^    function _retry_clipboard_detection_or_fail() {$/;"	f
@@ -8093,7 +8097,6 @@ balance_windows_vertical	tmuxifier/lib/layout-helpers.sh	/^balance_windows_verti
 bandwidth_to_unit	tmux/plugins/tmux/scripts/network_bandwidth.sh	/^bandwidth_to_unit() {$/;"	f
 banner	zsh/.oh-my-zsh/tools/theme_chooser.sh	/^function banner() {$/;"	f
 bar	zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/highlighters/main/test-data/array-cmdsep1.zsh	/^bar(){}$/;"	f
-base46	NvChad/lazy-lock.json	/^  "base46": { "branch": "v2.0", "commit": "901ffef32ddceff79868e4d2f5dfaef5c9298456" },$/;"	o
 battery options	tmux/plugins/tmux/INSTALL.md	/^#### battery options$/;"	t	subsection:[tmux](https://github.com/tmux/tmux/wiki)
 battery_is_charging	zsh/.oh-my-zsh/plugins/battery/battery.plugin.zsh	/^  function battery_is_charging { false }$/;"	f
 battery_is_charging	zsh/.oh-my-zsh/plugins/battery/battery.plugin.zsh	/^  function battery_is_charging() {$/;"	f
@@ -8121,7 +8124,6 @@ beginend block	nvim/lua/james/core/my_snippets/snippets/systemverilog.json	/^	"b
 behind	zsh/.oh-my-zsh/plugins/git-prompt/gitstatus.py	/^                        behind = int(div[len('behind '):].strip())$/;"	v
 behind	zsh/.oh-my-zsh/plugins/git-prompt/gitstatus.py	/^ahead, behind = 0, 0$/;"	v
 bem	zsh/.oh-my-zsh/plugins/frontend-search/frontend-search.plugin.zsh	/^alias bem='frontend bem'$/;"	a
-better-escape.nvim	NvChad/lazy-lock.json	/^  "better-escape.nvim": { "branch": "master", "commit": "426d29708064d5b1bfbb040424651c92af1f3f6/;"	o
 bfu	zsh/.oh-my-zsh/plugins/brew/brew.plugin.zsh	/^alias bfu='brew upgrade --formula'$/;"	a
 bgnotify	zsh/.oh-my-zsh/plugins/bgnotify/bgnotify.plugin.zsh	/^function bgnotify {$/;"	f
 bgnotify zsh plugin	zsh/.oh-my-zsh/plugins/bgnotify/README.md	/^# bgnotify zsh plugin$/;"	c
@@ -8180,41 +8182,12 @@ body	nvim/lua/james/core/my_snippets/snippets/systemverilog.json	/^        "body
 bold	zsh/.oh-my-zsh/plugins/zsh-navigation-tools/.config/znt/n-list.conf	/^bold=${znt_list_bold:-$bold}$/;"	k
 bootsnipp	zsh/.oh-my-zsh/plugins/frontend-search/frontend-search.plugin.zsh	/^alias bootsnipp='frontend bootsnipp'$/;"	a
 bootstrap	tmuxifier/Makefile	/^bootstrap: test-runner.sh test\/assert.sh test\/stub.sh$/;"	t
-border	NvChad/lua/plugins/configs/cmp.lua	/^local function border(hl_name)$/;"	f
 border	zsh/.oh-my-zsh/plugins/zsh-navigation-tools/.config/znt/n-list.conf	/^border=${znt_list_border:-$border}$/;"	k
 bout	zsh/.oh-my-zsh/plugins/bundler/bundler.plugin.zsh	/^alias bout="bundle outdated"$/;"	a
 bp	zsh/.oh-my-zsh/plugins/bundler/bundler.plugin.zsh	/^alias bp="bundle package"$/;"	a
 br	zsh/.oh-my-zsh/plugins/bridgetown/bridgetown.plugin.zsh	/^alias br='bridgetown'$/;"	a
 bra	zsh/.oh-my-zsh/plugins/bridgetown/bridgetown.plugin.zsh	/^alias bra='bin\/bridgetown apply'$/;"	a
 brake	zsh/.oh-my-zsh/plugins/rake/rake.plugin.zsh	/^alias brake='noglob bundle exec rake'       # execute the bundled rake gem$/;"	a
-branch	NvChad/lazy-lock.json	/^  "Comment.nvim": { "branch": "master", "commit": "a89339ffbee677ab0521a483b6dac7e2e67c907e" },$/;"	s	object:Comment.nvim
-branch	NvChad/lazy-lock.json	/^  "LuaSnip": { "branch": "master", "commit": "a6355b12a3b7da0aef71f02560e17ff480182b97" },$/;"	s	object:LuaSnip
-branch	NvChad/lazy-lock.json	/^  "base46": { "branch": "v2.0", "commit": "901ffef32ddceff79868e4d2f5dfaef5c9298456" },$/;"	s	object:base46
-branch	NvChad/lazy-lock.json	/^  "better-escape.nvim": { "branch": "master", "commit": "426d29708064d5b1bfbb040424651c92af1f3f6/;"	s	object:better-escape.nvim
-branch	NvChad/lazy-lock.json	/^  "cmp-buffer": { "branch": "main", "commit": "3022dbc9166796b644a841a02de8dd1cc1d311fa" },$/;"	s	object:cmp-buffer
-branch	NvChad/lazy-lock.json	/^  "cmp-nvim-lsp": { "branch": "main", "commit": "0e6b2ed705ddcff9738ec4ea838141654f12eeef" },$/;"	s	object:cmp-nvim-lsp
-branch	NvChad/lazy-lock.json	/^  "cmp-nvim-lua": { "branch": "main", "commit": "f12408bdb54c39c23e67cab726264c10db33ada8" },$/;"	s	object:cmp-nvim-lua
-branch	NvChad/lazy-lock.json	/^  "cmp-path": { "branch": "main", "commit": "91ff86cd9c29299a64f968ebb45846c485725f23" },$/;"	s	object:cmp-path
-branch	NvChad/lazy-lock.json	/^  "cmp_luasnip": { "branch": "master", "commit": "18095520391186d634a0045dacaa346291096566" },$/;"	s	object:cmp_luasnip
-branch	NvChad/lazy-lock.json	/^  "extensions": { "branch": "v2.0", "commit": "f76b8460d2f960c1c5c2af40845ead33c725bbf7" },$/;"	s	object:extensions
-branch	NvChad/lazy-lock.json	/^  "friendly-snippets": { "branch": "main", "commit": "8f26df063f0fdabc27845c7aed56db9102d385e8" /;"	s	object:friendly-snippets
-branch	NvChad/lazy-lock.json	/^  "gitsigns.nvim": { "branch": "main", "commit": "372d5cb485f2062ac74abc5b33054abac21d8b58" },$/;"	s	object:gitsigns.nvim
-branch	NvChad/lazy-lock.json	/^  "indent-blankline.nvim": { "branch": "master", "commit": "018bd04d80c9a73d399c1061fa0c3b14a761/;"	s	object:indent-blankline.nvim
-branch	NvChad/lazy-lock.json	/^  "lazy.nvim": { "branch": "main", "commit": "57cce98dfdb2f2dd05a0567d89811e6d0505e13b" },$/;"	s	object:lazy.nvim
-branch	NvChad/lazy-lock.json	/^  "mason.nvim": { "branch": "main", "commit": "7caf4f7143b4b2e17fe0e893bdd05c622c508207" },$/;"	s	object:mason.nvim
-branch	NvChad/lazy-lock.json	/^  "null-ls.nvim": { "branch": "main", "commit": "f8ffcd7cb8fb3325c711d459152ef132b5b65aed" },$/;"	s	object:null-ls.nvim
-branch	NvChad/lazy-lock.json	/^  "nvim-autopairs": { "branch": "master", "commit": "7470af886ffb3df32800e5ef9c072a6cd825770d" }/;"	s	object:nvim-autopairs
-branch	NvChad/lazy-lock.json	/^  "nvim-cmp": { "branch": "main", "commit": "777450fd0ae289463a14481673e26246b5e38bf2" },$/;"	s	object:nvim-cmp
-branch	NvChad/lazy-lock.json	/^  "nvim-colorizer.lua": { "branch": "master", "commit": "dde3084106a70b9a79d48f426f6d6fec6fd203f/;"	s	object:nvim-colorizer.lua
-branch	NvChad/lazy-lock.json	/^  "nvim-lspconfig": { "branch": "master", "commit": "e52efca5d4f5536533d447ec0d97e4d525b37ace" }/;"	s	object:nvim-lspconfig
-branch	NvChad/lazy-lock.json	/^  "nvim-tree.lua": { "branch": "master", "commit": "6ad5c26f4d44791699c5538d9773cb141ba033e7" },$/;"	s	object:nvim-tree.lua
-branch	NvChad/lazy-lock.json	/^  "nvim-treesitter": { "branch": "master", "commit": "dad0864fa324d1df88242a978e9d7de383c5be68" /;"	s	object:nvim-treesitter
-branch	NvChad/lazy-lock.json	/^  "nvim-web-devicons": { "branch": "master", "commit": "4ec26d67d419c12a4abaea02f1b6c57b40c08d7e/;"	s	object:nvim-web-devicons
-branch	NvChad/lazy-lock.json	/^  "nvterm": { "branch": "main", "commit": "29a70ef608a8cc5db3a5fc300d39a39d1a44a863" },$/;"	s	object:nvterm
-branch	NvChad/lazy-lock.json	/^  "plenary.nvim": { "branch": "master", "commit": "9ac3e9541bbabd9d73663d757e4fe48a675bb054" },$/;"	s	object:plenary.nvim
-branch	NvChad/lazy-lock.json	/^  "telescope.nvim": { "branch": "master", "commit": "6258d50b09f9ae087317e392efe7c05a7323492d" }/;"	s	object:telescope.nvim
-branch	NvChad/lazy-lock.json	/^  "ui": { "branch": "v2.0", "commit": "3e52dbbfff31912a5d1897fcb15051ad62d0c300" },$/;"	s	object:ui
-branch	NvChad/lazy-lock.json	/^  "which-key.nvim": { "branch": "main", "commit": "4b73390eec680b4c061ea175eb32c0ff3412271d" }$/;"	s	object:which-key.nvim
 branch	zsh/.oh-my-zsh/plugins/git-prompt/gitstatus.py	/^            branch = get_tagname_or_hash()$/;"	v
 branch	zsh/.oh-my-zsh/plugins/git-prompt/gitstatus.py	/^            branch = st[2].split(' ')[-1]$/;"	v
 branch	zsh/.oh-my-zsh/plugins/git-prompt/gitstatus.py	/^            branch = st[2].strip()$/;"	v
@@ -8244,8 +8217,8 @@ bubc	zsh/.oh-my-zsh/plugins/brew/brew.plugin.zsh	/^alias bubc='brew upgrade && b
 bubo	zsh/.oh-my-zsh/plugins/brew/brew.plugin.zsh	/^alias bubo='brew update && brew outdated'$/;"	a
 bubu	zsh/.oh-my-zsh/plugins/brew/brew.plugin.zsh	/^alias bubu='bubo && bubc'$/;"	a
 bubug	zsh/.oh-my-zsh/plugins/brew/brew.plugin.zsh	/^alias bubug='bubo && bugbc'$/;"	a
+buffer_not_empty	nvim/lua/james/plugins/lualine.lua	/^  buffer_not_empty = function()$/;"	f
 bugbc	zsh/.oh-my-zsh/plugins/brew/brew.plugin.zsh	/^alias bugbc='brew upgrade --greedy && brew cleanup'$/;"	a
-build	NvChad/lua/plugins/init.lua	/^    build = function()$/;"	f
 bundle_install	zsh/.oh-my-zsh/plugins/bundler/bundler.plugin.zsh	/^bundle_install() {$/;"	f
 bundlephobia	zsh/.oh-my-zsh/plugins/frontend-search/frontend-search.plugin.zsh	/^alias bundlephobia='frontend bundlephobia'$/;"	a
 buz	zsh/.oh-my-zsh/plugins/brew/brew.plugin.zsh	/^alias buz='brew uninstall --zap'$/;"	a
@@ -8261,11 +8234,7 @@ c3migrate	zsh/.oh-my-zsh/plugins/cakephp3/cakephp3.plugin.zsh	/^alias c3migrate=
 c404	zsh/.oh-my-zsh/plugins/systemadmin/systemadmin.plugin.zsh	/^function c404() {$/;"	f
 cabal_sandbox_info	zsh/.oh-my-zsh/plugins/cabal/cabal.plugin.zsh	/^function cabal_sandbox_info() {$/;"	f
 cakephp3 plugin	zsh/.oh-my-zsh/plugins/cakephp3/README.md	/^# cakephp3 plugin$/;"	c
-callback	NvChad/lua/core/init.lua	/^  callback = function()$/;"	f
-callback	NvChad/lua/core/init.lua	/^  callback = function(opts)$/;"	f
-callback	NvChad/lua/core/utils.lua	/^    callback = function()$/;"	f
-callback	NvChad/lua/plugins/configs/others.lua	/^    callback = function()$/;"	f
-callback	NvChad/lua/plugins/init.lua	/^        callback = function()$/;"	f
+callback	nvim/lua/james/plugins/lspconfig.lua	/^  callback = function(ev)$/;"	f
 callback	nvim/lua/james/plugins/vunit/.old.init.lua	/^    callback = function()$/;"	f
 callback	nvim/lua/james/plugins/vunit/init.lua	/^    callback = function()$/;"	f
 calling-complete	tmuxifier/lib/util.sh	/^calling-complete() {$/;"	f
@@ -10050,6 +10019,7 @@ checkForGitDir	tmux/plugins/tmux/scripts/git.sh	/^checkForGitDir()$/;"	f
 checkForLandoFile	zsh/.oh-my-zsh/plugins/lando/lando.plugin.zsh	/^checkForLandoFile() {$/;"	f
 check_binding_defined	tmux/plugins/tpm/tests/test_plugin_sourcing.sh	/^check_binding_defined() {$/;"	f
 check_dir_exists_helper	tmux/plugins/tpm/tests/helpers/tpm.sh	/^check_dir_exists_helper() {$/;"	f
+check_git_workspace	nvim/lua/james/plugins/lualine.lua	/^  check_git_workspace = function()$/;"	f
 check_tpm_path	tmux/plugins/tpm/tests/test_plugin_sourcing.sh	/^check_tpm_path() {$/;"	f
 chicken	zsh/.oh-my-zsh/plugins/lol/lol.plugin.zsh	/^alias chicken='git add'$/;"	a
 chpwd_dirhistory	zsh/.oh-my-zsh/plugins/dirhistory/dirhistory.plugin.zsh	/^function chpwd_dirhistory() {$/;"	f
@@ -10106,17 +10076,13 @@ clone_plugin	tmux/plugins/tpm/scripts/install_plugins.sh	/^clone_plugin() {$/;"	
 clr	zsh/.oh-my-zsh/plugins/systemadmin/systemadmin.plugin.zsh	/^alias clr='clear; echo Currently logged in on $TTY, as $USERNAME in directory $PWD.'$/;"	a
 clrz	zsh/.oh-my-zsh/plugins/systemadmin/systemadmin.plugin.zsh	/^function clrz() {$/;"	f
 cmdline	zsh/.oh-my-zsh/plugins/shell-proxy/proxy.py	/^def cmdline(*items):$/;"	f
-cmp-buffer	NvChad/lazy-lock.json	/^  "cmp-buffer": { "branch": "main", "commit": "3022dbc9166796b644a841a02de8dd1cc1d311fa" },$/;"	o
-cmp-nvim-lsp	NvChad/lazy-lock.json	/^  "cmp-nvim-lsp": { "branch": "main", "commit": "0e6b2ed705ddcff9738ec4ea838141654f12eeef" },$/;"	o
-cmp-nvim-lua	NvChad/lazy-lock.json	/^  "cmp-nvim-lua": { "branch": "main", "commit": "f12408bdb54c39c23e67cab726264c10db33ada8" },$/;"	o
-cmp-path	NvChad/lazy-lock.json	/^  "cmp-path": { "branch": "main", "commit": "91ff86cd9c29299a64f968ebb45846c485725f23" },$/;"	o
-cmp_luasnip	NvChad/lazy-lock.json	/^  "cmp_luasnip": { "branch": "master", "commit": "18095520391186d634a0045dacaa346291096566" },$/;"	o
 co	zsh/.oh-my-zsh/plugins/composer/composer.plugin.zsh	/^alias co='composer outdated'$/;"	a
 cod	zsh/.oh-my-zsh/plugins/composer/composer.plugin.zsh	/^alias cod='composer outdated --direct'$/;"	a
 code_points	zsh/.oh-my-zsh/plugins/emoji/update_emoji.py	/^        code_points, status, emoji, name = emoji_match[0]$/;"	v
 code_to_omz	zsh/.oh-my-zsh/plugins/emoji/update_emoji.py	/^def code_to_omz(_code_points):$/;"	f
 codeclimate plugin	zsh/.oh-my-zsh/plugins/codeclimate/README.md	/^# codeclimate plugin$/;"	c
 codepen	zsh/.oh-my-zsh/plugins/frontend-search/frontend-search.plugin.zsh	/^alias codepen='frontend codepen'$/;"	a
+color	nvim/lua/james/plugins/lualine.lua	/^  color = function()$/;"	f
 colored	zsh/.oh-my-zsh/plugins/aliases/termcolor.py	/^def colored(text, color=None, on_color=None, attrs=None):$/;"	f
 colored	zsh/.oh-my-zsh/plugins/colored-man-pages/colored-man-pages.plugin.zsh	/^function colored() {$/;"	f
 colorize	zsh/.oh-my-zsh/plugins/colorize/README.md	/^# colorize$/;"	c
@@ -10128,34 +10094,7 @@ command-not-found plugin	zsh/.oh-my-zsh/plugins/command-not-found/README.md	/^# 
 command_exists	tmux/plugins/tmux-sensible/sensible.tmux	/^command_exists() {$/;"	f
 command_exists	zsh/.oh-my-zsh/tools/install.sh	/^command_exists() {$/;"	f
 command_not_found_handler	zsh/.oh-my-zsh/plugins/command-not-found/command-not-found.plugin.zsh	/^  command_not_found_handler() {$/;"	f
-commit	NvChad/lazy-lock.json	/^  "Comment.nvim": { "branch": "master", "commit": "a89339ffbee677ab0521a483b6dac7e2e67c907e" },$/;"	s	object:Comment.nvim
-commit	NvChad/lazy-lock.json	/^  "LuaSnip": { "branch": "master", "commit": "a6355b12a3b7da0aef71f02560e17ff480182b97" },$/;"	s	object:LuaSnip
-commit	NvChad/lazy-lock.json	/^  "base46": { "branch": "v2.0", "commit": "901ffef32ddceff79868e4d2f5dfaef5c9298456" },$/;"	s	object:base46
-commit	NvChad/lazy-lock.json	/^  "better-escape.nvim": { "branch": "master", "commit": "426d29708064d5b1bfbb040424651c92af1f3f6/;"	s	object:better-escape.nvim
-commit	NvChad/lazy-lock.json	/^  "cmp-buffer": { "branch": "main", "commit": "3022dbc9166796b644a841a02de8dd1cc1d311fa" },$/;"	s	object:cmp-buffer
-commit	NvChad/lazy-lock.json	/^  "cmp-nvim-lsp": { "branch": "main", "commit": "0e6b2ed705ddcff9738ec4ea838141654f12eeef" },$/;"	s	object:cmp-nvim-lsp
-commit	NvChad/lazy-lock.json	/^  "cmp-nvim-lua": { "branch": "main", "commit": "f12408bdb54c39c23e67cab726264c10db33ada8" },$/;"	s	object:cmp-nvim-lua
-commit	NvChad/lazy-lock.json	/^  "cmp-path": { "branch": "main", "commit": "91ff86cd9c29299a64f968ebb45846c485725f23" },$/;"	s	object:cmp-path
-commit	NvChad/lazy-lock.json	/^  "cmp_luasnip": { "branch": "master", "commit": "18095520391186d634a0045dacaa346291096566" },$/;"	s	object:cmp_luasnip
-commit	NvChad/lazy-lock.json	/^  "extensions": { "branch": "v2.0", "commit": "f76b8460d2f960c1c5c2af40845ead33c725bbf7" },$/;"	s	object:extensions
-commit	NvChad/lazy-lock.json	/^  "friendly-snippets": { "branch": "main", "commit": "8f26df063f0fdabc27845c7aed56db9102d385e8" /;"	s	object:friendly-snippets
-commit	NvChad/lazy-lock.json	/^  "gitsigns.nvim": { "branch": "main", "commit": "372d5cb485f2062ac74abc5b33054abac21d8b58" },$/;"	s	object:gitsigns.nvim
-commit	NvChad/lazy-lock.json	/^  "indent-blankline.nvim": { "branch": "master", "commit": "018bd04d80c9a73d399c1061fa0c3b14a761/;"	s	object:indent-blankline.nvim
-commit	NvChad/lazy-lock.json	/^  "lazy.nvim": { "branch": "main", "commit": "57cce98dfdb2f2dd05a0567d89811e6d0505e13b" },$/;"	s	object:lazy.nvim
-commit	NvChad/lazy-lock.json	/^  "mason.nvim": { "branch": "main", "commit": "7caf4f7143b4b2e17fe0e893bdd05c622c508207" },$/;"	s	object:mason.nvim
-commit	NvChad/lazy-lock.json	/^  "null-ls.nvim": { "branch": "main", "commit": "f8ffcd7cb8fb3325c711d459152ef132b5b65aed" },$/;"	s	object:null-ls.nvim
-commit	NvChad/lazy-lock.json	/^  "nvim-autopairs": { "branch": "master", "commit": "7470af886ffb3df32800e5ef9c072a6cd825770d" }/;"	s	object:nvim-autopairs
-commit	NvChad/lazy-lock.json	/^  "nvim-cmp": { "branch": "main", "commit": "777450fd0ae289463a14481673e26246b5e38bf2" },$/;"	s	object:nvim-cmp
-commit	NvChad/lazy-lock.json	/^  "nvim-colorizer.lua": { "branch": "master", "commit": "dde3084106a70b9a79d48f426f6d6fec6fd203f/;"	s	object:nvim-colorizer.lua
-commit	NvChad/lazy-lock.json	/^  "nvim-lspconfig": { "branch": "master", "commit": "e52efca5d4f5536533d447ec0d97e4d525b37ace" }/;"	s	object:nvim-lspconfig
-commit	NvChad/lazy-lock.json	/^  "nvim-tree.lua": { "branch": "master", "commit": "6ad5c26f4d44791699c5538d9773cb141ba033e7" },$/;"	s	object:nvim-tree.lua
-commit	NvChad/lazy-lock.json	/^  "nvim-treesitter": { "branch": "master", "commit": "dad0864fa324d1df88242a978e9d7de383c5be68" /;"	s	object:nvim-treesitter
-commit	NvChad/lazy-lock.json	/^  "nvim-web-devicons": { "branch": "master", "commit": "4ec26d67d419c12a4abaea02f1b6c57b40c08d7e/;"	s	object:nvim-web-devicons
-commit	NvChad/lazy-lock.json	/^  "nvterm": { "branch": "main", "commit": "29a70ef608a8cc5db3a5fc300d39a39d1a44a863" },$/;"	s	object:nvterm
-commit	NvChad/lazy-lock.json	/^  "plenary.nvim": { "branch": "master", "commit": "9ac3e9541bbabd9d73663d757e4fe48a675bb054" },$/;"	s	object:plenary.nvim
-commit	NvChad/lazy-lock.json	/^  "telescope.nvim": { "branch": "master", "commit": "6258d50b09f9ae087317e392efe7c05a7323492d" }/;"	s	object:telescope.nvim
-commit	NvChad/lazy-lock.json	/^  "ui": { "branch": "v2.0", "commit": "3e52dbbfff31912a5d1897fcb15051ad62d0c300" },$/;"	s	object:ui
-commit	NvChad/lazy-lock.json	/^  "which-key.nvim": { "branch": "main", "commit": "4b73390eec680b4c061ea175eb32c0ff3412271d" }$/;"	s	object:which-key.nvim
+commands	nvim/lua/james/plugins/neo-tree/init.lua	/^          commands = {} -- Add a custom command or override a global one using the same function/;"	f
 commit:is-breaking	zsh/.oh-my-zsh/tools/changelog.sh	/^  function commit:is-breaking {$/;"	f
 commit:is-revert	zsh/.oh-my-zsh/tools/changelog.sh	/^  function commit:is-revert {$/;"	f
 commit:scope	zsh/.oh-my-zsh/tools/changelog.sh	/^  function commit:scope {$/;"	f
@@ -10165,11 +10104,6 @@ compassdoc	zsh/.oh-my-zsh/plugins/frontend-search/frontend-search.plugin.zsh	/^a
 compleat plugin	zsh/.oh-my-zsh/plugins/compleat/README.md	/^# compleat plugin$/;"	c
 composer	zsh/.oh-my-zsh/plugins/composer/README.md	/^# composer$/;"	c
 con80	zsh/.oh-my-zsh/plugins/systemadmin/systemadmin.plugin.zsh	/^function con80() {$/;"	f
-config	NvChad/lua/custom/plugins.lua	/^        config = function()$/;"	f
-config	NvChad/lua/custom/plugins.lua	/^    config = function()$/;"	f
-config	NvChad/lua/plugins/init.lua	/^        config = function(_, opts)$/;"	f
-config	NvChad/lua/plugins/init.lua	/^    config = function()$/;"	f
-config	NvChad/lua/plugins/init.lua	/^    config = function(_, opts)$/;"	f
 config	nvim/lua/james/plugins/telescope.lua	/^      config = function()$/;"	f
 config	zsh/.oh-my-zsh/plugins/heroku-alias/README.md	/^## config$/;"	s	chapter:Alias list
 conflicts	zsh/.oh-my-zsh/plugins/git-prompt/gitstatus.py	/^untracked, staged, changed, deleted, conflicts = [], [], [], [], []$/;"	v
@@ -10225,6 +10159,15 @@ date_locale	zsh/.oh-my-zsh/plugins/isodate/isodate.plugin.zsh	/^alias date_local
 db	zsh/.oh-my-zsh/plugins/deno/deno.plugin.zsh	/^alias db='deno bundle'$/;"	a
 db	zsh/.oh-my-zsh/plugins/dotnet/dotnet.plugin.zsh	/^alias db='dotnet build'$/;"	a
 dbl	zsh/.oh-my-zsh/plugins/docker/docker.plugin.zsh	/^alias dbl='docker build'$/;"	a
+dbt plugin	zsh/.oh-my-zsh/plugins/dbt/README.md	/^# dbt plugin$/;"	c
+dbtcds	zsh/.oh-my-zsh/plugins/dbt/dbt.plugin.zsh	/^alias dbtcds="dbt docs generate; dbt docs serve"$/;"	a
+dbtds	zsh/.oh-my-zsh/plugins/dbt/dbt.plugin.zsh	/^alias dbtds="dbt docs generate --no-compile; dbt docs serve"$/;"	a
+dbtfrt	zsh/.oh-my-zsh/plugins/dbt/dbt.plugin.zsh	/^alias dbtfrt="dbtrs; dbt run --full-refresh; dbt test"$/;"	a
+dbtlm	zsh/.oh-my-zsh/plugins/dbt/dbt.plugin.zsh	/^alias dbtlm="dbt ls -s state:modified"$/;"	a
+dbtrm	zsh/.oh-my-zsh/plugins/dbt/dbt.plugin.zsh	/^alias dbtrm="dbt run -s state:modified"$/;"	a
+dbtrs	zsh/.oh-my-zsh/plugins/dbt/dbt.plugin.zsh	/^alias dbtrs="dbt clean; dbt deps; dbt seed"$/;"	a
+dbtrtm	zsh/.oh-my-zsh/plugins/dbt/dbt.plugin.zsh	/^alias dbtrtm="dbtrm && dbttm"$/;"	a
+dbttm	zsh/.oh-my-zsh/plugins/dbt/dbt.plugin.zsh	/^alias dbttm="dbt test -m state:modified"$/;"	a
 dc	zsh/.oh-my-zsh/plugins/deno/deno.plugin.zsh	/^alias dc='deno compile'$/;"	a
 dca	zsh/.oh-my-zsh/plugins/deno/deno.plugin.zsh	/^alias dca='deno cache'$/;"	a
 dcb	zsh/.oh-my-zsh/plugins/docker-compose/docker-compose.plugin.zsh	/^alias dcb="$dccmd build"$/;"	a
@@ -12131,6 +12074,7 @@ drpm	zsh/.oh-my-zsh/plugins/drush/drush.plugin.zsh	/^alias drpm="drush pm-list -
 drpu	zsh/.oh-my-zsh/plugins/drush/drush.plugin.zsh	/^function drpu() {$/;"	f
 drs	zsh/.oh-my-zsh/plugins/docker/docker.plugin.zsh	/^alias drs='docker container restart'$/;"	a
 drst	zsh/.oh-my-zsh/plugins/drush/drush.plugin.zsh	/^alias drst="drush core-status"$/;"	a
+dru	zsh/.oh-my-zsh/plugins/deno/deno.plugin.zsh	/^alias dru='deno run --unstable'$/;"	a
 druli	zsh/.oh-my-zsh/plugins/drush/drush.plugin.zsh	/^alias druli="drush user:login"$/;"	a
 drup	zsh/.oh-my-zsh/plugins/drush/drush.plugin.zsh	/^alias drup="drush updatedb"$/;"	a
 drups	zsh/.oh-my-zsh/plugins/drush/drush.plugin.zsh	/^alias drups="drush updatedb-status"$/;"	a
@@ -12167,7 +12111,6 @@ e64	zsh/.oh-my-zsh/plugins/encode64/encode64.plugin.zsh	/^alias e64=encode64$/;"
 ea	zsh/.oh-my-zsh/plugins/ember-cli/ember-cli.plugin.zsh	/^alias ea='ember addon'$/;"	a
 eb	zsh/.oh-my-zsh/plugins/ember-cli/ember-cli.plugin.zsh	/^alias eb='ember build'$/;"	a
 ecd	zsh/.oh-my-zsh/plugins/emacs/emacs.plugin.zsh	/^function ecd {$/;"	f
-echo	NvChad/lua/core/bootstrap.lua	/^M.echo = function(str)$/;"	f	unknown:M
 echo	zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/highlighters/main/test-data/alias-self.zsh	/^alias echo='echo foo'$/;"	a
 echo_err	tmux/plugins/tpm/scripts/helpers/shell_echo_functions.sh	/^echo_err() {$/;"	f
 echo_err	tmux/plugins/tpm/scripts/helpers/tmux_echo_functions.sh	/^echo_err() {$/;"	f
@@ -13944,10 +13887,8 @@ executes the suggestion when invoked	zsh/.oh-my-zsh/custom/plugins/zsh-autosugge
 exist_gh	zsh/.oh-my-zsh/plugins/github/github.plugin.zsh	/^exist_gh() { # [DIRECTORY]$/;"	f
 exit_if_unsupported_version	tmux/plugins/tpm/scripts/check_tmux_version.sh	/^exit_if_unsupported_version() {$/;"	f
 exit_value_helper	tmux/plugins/tpm/scripts/helpers/utility.sh	/^exit_value_helper() {$/;"	f
-expand	NvChad/lua/plugins/configs/cmp.lua	/^    expand = function(args)$/;"	f
 expand	nvim/lua/james/plugins/cmp.lua	/^    expand = function(args)$/;"	f
 expand-or-complete-with-dots	zsh/.oh-my-zsh/lib/completion.zsh	/^  expand-or-complete-with-dots() {$/;"	f
-extensions	NvChad/lazy-lock.json	/^  "extensions": { "branch": "v2.0", "commit": "f76b8460d2f960c1c5c2af40845ead33c725bbf7" },$/;"	o
 extract	zsh/.oh-my-zsh/plugins/extract/extract.plugin.zsh	/^extract() {$/;"	f
 extract plugin	zsh/.oh-my-zsh/plugins/extract/README.md	/^# extract plugin$/;"	c
 f	nvim/lua/james/plugins/luasnip.lua	/^local f = ls.function_node$/;"	f
@@ -13979,6 +13920,8 @@ ffp	zsh/.oh-my-zsh/plugins/fastfile/fastfile.plugin.zsh	/^alias ffp=fastfile_pri
 ffrm	zsh/.oh-my-zsh/plugins/fastfile/fastfile.plugin.zsh	/^alias ffrm=fastfile_rm$/;"	a
 ffsync	zsh/.oh-my-zsh/plugins/fastfile/fastfile.plugin.zsh	/^alias ffsync=fastfile_sync$/;"	a
 fgrep	zsh/.oh-my-zsh/lib/grep.zsh	/^        alias fgrep="grep -F $GREP_OPTIONS"$/;"	a
+filter	nvim/lua/james/plugins/edgy/init.lua	/^            filter = function(buf)$/;"	f
+filter	nvim/lua/james/plugins/edgy/init.lua	/^            filter = function(buf, win)$/;"	f
 finalize_and_go_to_session	tmuxifier/lib/layout-helpers.sh	/^finalize_and_go_to_session() {$/;"	f
 find and grep	zsh/.oh-my-zsh/plugins/common-aliases/README.md	/^### find and grep$/;"	S	section:Common Aliases Plugin""Aliases
 find_project	zsh/.oh-my-zsh/plugins/sublime/sublime.plugin.zsh	/^function find_project() {$/;"	f
@@ -14026,12 +13969,10 @@ forecast_unicode	tmux/plugins/tmux/scripts/weather.sh	/^forecast_unicode()$/;"	f
 forever	nvim/lua/james/core/my_snippets/snippets/systemverilog.json	/^	"forever":{$/;"	o
 fork-join	nvim/lua/james/core/my_snippets/snippets/systemverilog.json	/^	"fork-join":{$/;"	o
 forklift	zsh/.oh-my-zsh/plugins/forklift/README.md	/^# forklift$/;"	c
-format	NvChad/lua/plugins/configs/cmp.lua	/^  format = function(_, item)$/;"	f
 format	nvim/lua/james/plugins/cmp.lua	/^    format = function(entry, item)$/;"	f
 formatted	nvim/lua/james/plugins/vunit/init.lua	/^  local formatted = string.format(test_function_query_string, name)$/;"	f
 fossil_prompt_info	zsh/.oh-my-zsh/plugins/fossil/fossil.plugin.zsh	/^function fossil_prompt_info() {$/;"	f
 freespace	zsh/.oh-my-zsh/plugins/macos/macos.plugin.zsh	/^function freespace(){$/;"	f
-friendly-snippets	NvChad/lazy-lock.json	/^  "friendly-snippets": { "branch": "main", "commit": "8f26df063f0fdabc27845c7aed56db9102d385e8" /;"	o
 frontend	zsh/.oh-my-zsh/plugins/frontend-search/frontend-search.plugin.zsh	/^function frontend() {$/;"	f
 fuck-command-line	zsh/.oh-my-zsh/plugins/thefuck/thefuck.plugin.zsh	/^fuck-command-line() {$/;"	f
 function	nvim/lua/james/core/my_snippets/snippets/systemverilog.json	/^	"function": {$/;"	o
@@ -14147,7 +14088,6 @@ gemsets	zsh/.oh-my-zsh/plugins/rbenv/rbenv.plugin.zsh	/^  alias gemsets="rbenv g
 gemsets	zsh/.oh-my-zsh/plugins/rbenv/rbenv.plugin.zsh	/^  function gemsets() { echo "not supported" }$/;"	f
 gemsets	zsh/.oh-my-zsh/plugins/rvm/rvm.plugin.zsh	/^alias gemsets='rvms list'$/;"	a
 gemy	zsh/.oh-my-zsh/plugins/gem/gem.plugin.zsh	/^function gemy {$/;"	f
-gen_chadrc_template	NvChad/lua/core/bootstrap.lua	/^M.gen_chadrc_template = function()$/;"	f	unknown:M
 general	zsh/.oh-my-zsh/plugins/heroku-alias/README.md	/^## general$/;"	s	chapter:Alias list
 genpass	zsh/.oh-my-zsh/plugins/genpass/README.md	/^# genpass$/;"	c
 genpass-apple	zsh/.oh-my-zsh/plugins/genpass/README.md	/^## genpass-apple$/;"	s	chapter:genpass
@@ -14263,7 +14203,6 @@ github	zsh/.oh-my-zsh/plugins/frontend-search/frontend-search.plugin.zsh	/^alias
 github	zsh/.oh-my-zsh/plugins/web-search/web-search.plugin.zsh	/^alias github='web_search github'$/;"	a
 github plugin	zsh/.oh-my-zsh/plugins/github/README.md	/^# github plugin$/;"	c
 gitignore	zsh/.oh-my-zsh/plugins/gitignore/README.md	/^# gitignore$/;"	c
-gitsigns.nvim	NvChad/lazy-lock.json	/^  "gitsigns.nvim": { "branch": "main", "commit": "372d5cb485f2062ac74abc5b33054abac21d8b58" },$/;"	o
 givero	zsh/.oh-my-zsh/plugins/web-search/web-search.plugin.zsh	/^alias givero='web_search givero'$/;"	a
 gk	zsh/.oh-my-zsh/plugins/git/git.plugin.zsh	/^alias gk='\\gitk --all --branches &!'$/;"	a
 gke	zsh/.oh-my-zsh/plugins/git/git.plugin.zsh	/^alias gke='\\gitk --all $(git log --walk-reflogs --pretty=%h) &!'$/;"	a
@@ -14512,6 +14451,7 @@ hgsl	zsh/.oh-my-zsh/plugins/mercurial/mercurial.plugin.zsh	/^alias hgsl='hg log 
 hgt	zsh/.oh-my-zsh/plugins/heroku-alias/heroku.alias.sh	/^alias hgt='heroku log tail'$/;"	a
 hgun	zsh/.oh-my-zsh/plugins/mercurial/mercurial.plugin.zsh	/^alias hgun='hg resolve --list'$/;"	a
 hi	zsh/.oh-my-zsh/plugins/heroku-alias/heroku.alias.sh	/^alias hi='heroku login -i'$/;"	a
+hide_in_width	nvim/lua/james/plugins/lualine.lua	/^  hide_in_width = function()$/;"	f
 hidefiles	zsh/.oh-my-zsh/plugins/macos/macos.plugin.zsh	/^alias hidefiles="defaults write com.apple.finder AppleShowAllFiles -bool false && killall Finder/;"	a
 hin	zsh/.oh-my-zsh/plugins/helm/helm.plugin.zsh	/^alias hin='helm install'$/;"	a
 hin	zsh/.oh-my-zsh/plugins/heroku-alias/heroku.alias.sh	/^alias hin='heroku login'$/;"	a
@@ -14590,14 +14530,15 @@ in_hg	zsh/.oh-my-zsh/plugins/mercurial/mercurial.plugin.zsh	/^function in_hg() {
 in_svn	zsh/.oh-my-zsh/plugins/svn/svn.plugin.zsh	/^in_svn() {$/;"	f
 include	nvim/lua/james/core/my_snippets/snippets/systemverilog.json	/^    "include": {$/;"	o
 increment_name	zsh/.oh-my-zsh/plugins/emoji/update_emoji.py	/^def increment_name(_shortname):$/;"	f
-indent-blankline.nvim	NvChad/lazy-lock.json	/^  "indent-blankline.nvim": { "branch": "master", "commit": "018bd04d80c9a73d399c1061fa0c3b14a761/;"	o
-init	NvChad/lua/plugins/init.lua	/^    init = function()$/;"	f
+init	nvim/lua/james/plugins/edgy/init.lua	/^      init = function()$/;"	f
 initial	nvim/lua/james/core/my_snippets/snippets/systemverilog.json	/^	"initial": {$/;"	o
 initialize	zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/terminal_session.rb	/^  def initialize(opts = {})$/;"	f	class:TerminalSession
 initialize_session	tmuxifier/lib/layout-helpers.sh	/^initialize_session() {$/;"	f
 initialized after sourcing the plugin	zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/integrations/wrapped_widget_spec.rb	/^  context 'initialized after sourcing the plugin' do$/;"	c	describe:a wrapped widget
 initialized before sourcing the plugin	zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/integrations/rebound_bracket_spec.rb	/^  context 'initialized before sourcing the plugin' do$/;"	c	describe:rebinding [
 initialized before sourcing the plugin	zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/integrations/wrapped_widget_spec.rb	/^  context 'initialized before sourcing the plugin' do$/;"	c	describe:a wrapped widget
+ins_left	nvim/lua/james/plugins/lualine.lua	/^local function ins_left(component)$/;"	f
+ins_right	nvim/lua/james/plugins/lualine.lua	/^local function ins_right(component)$/;"	f
 insert-cycledleft	zsh/.oh-my-zsh/plugins/dircycle/dircycle.plugin.zsh	/^insert-cycledleft () {$/;"	f
 insert-cycledright	zsh/.oh-my-zsh/plugins/dircycle/dircycle.plugin.zsh	/^insert-cycledright () {$/;"	f
 insert_favlist	zsh/.oh-my-zsh/tools/theme_chooser.sh	/^function insert_favlist() {$/;"	f
@@ -16617,12 +16558,10 @@ language	nvim/lua/james/core/my_snippets/package.json	/^          "language": [$
 lart	zsh/.oh-my-zsh/plugins/common-aliases/common-aliases.plugin.zsh	/^alias lart='ls -1Fcart'$/;"	a
 last-working-dir plugin	zsh/.oh-my-zsh/plugins/last-working-dir/README.md	/^# last-working-dir plugin$/;"	c
 latest-perl	zsh/.oh-my-zsh/plugins/perl/perl.plugin.zsh	/^alias latest-perl='curl -s https:\/\/www.perl.org\/get.html | perl -wlne '\\''if (\/perl\\-([\\d/;"	a
-lazy	NvChad/lua/core/bootstrap.lua	/^M.lazy = function(install_path)$/;"	f	unknown:M
-lazy.nvim	NvChad/lazy-lock.json	/^  "lazy.nvim": { "branch": "main", "commit": "57cce98dfdb2f2dd05a0567d89811e6d0505e13b" },$/;"	o
-lazy_load	NvChad/lua/core/utils.lua	/^M.lazy_load = function(plugin)$/;"	f	unknown:M
 ldot	zsh/.oh-my-zsh/plugins/common-aliases/common-aliases.plugin.zsh	/^alias ldot='ls -ld .*'$/;"	a
 letcat	zsh/.oh-my-zsh/plugins/lol/lol.plugin.zsh	/^alias letcat='git checkout'$/;"	a
 lho	zsh/.oh-my-zsh/plugins/lighthouse/lighthouse.plugin.zsh	/^alias lho='open_lighthouse_ticket'$/;"	a
+library.fusesoc_cores	fusesoc/fusesoc.conf	/^[library.fusesoc_cores]$/;"	s
 lines	zsh/.oh-my-zsh/plugins/aliases/cheatsheet.py	/^    lines = sys.stdin.readlines()$/;"	v
 linux_acpi	tmux/plugins/tmux/scripts/battery.sh	/^linux_acpi() {$/;"	f
 listMavenCompletions	zsh/.oh-my-zsh/plugins/mvn/mvn.plugin.zsh	/^function listMavenCompletions {$/;"	f
@@ -16630,8 +16569,6 @@ list_themes	zsh/.oh-my-zsh/tools/theme_chooser.sh	/^function list_themes() {$/;"
 ll	zsh/.oh-my-zsh/lib/directories.zsh	/^alias ll='ls -lh'$/;"	a
 ll	zsh/.oh-my-zsh/plugins/common-aliases/common-aliases.plugin.zsh	/^alias ll='ls -l'      #long list$/;"	a
 load-nvmrc	zsh/.oh-my-zsh/plugins/nvm/nvm.plugin.zsh	/^  function load-nvmrc {$/;"	f
-load_config	NvChad/lua/core/utils.lua	/^M.load_config = function()$/;"	f	unknown:M
-load_mappings	NvChad/lua/core/utils.lua	/^M.load_mappings = function(section, mapping_opt)$/;"	f	unknown:M
 load_session	tmuxifier/lib/layout-helpers.sh	/^load_session() {$/;"	f
 load_window	tmuxifier/lib/layout-helpers.sh	/^load_window() {$/;"	f
 local NCD_DONT_PUSHD	zsh/.oh-my-zsh/plugins/zsh-navigation-tools/.config/znt/n-cd.conf	/^local NCD_DONT_PUSHD=0$/;"	k
@@ -16658,6 +16595,7 @@ local bold	zsh/.oh-my-zsh/plugins/zsh-navigation-tools/.config/znt/n-list.conf	/
 local border	zsh/.oh-my-zsh/plugins/zsh-navigation-tools/.config/znt/n-list.conf	/^local border=0$/;"	k
 local colorpair	zsh/.oh-my-zsh/plugins/zsh-navigation-tools/.config/znt/n-list.conf	/^local colorpair="white\/black"$/;"	k
 local feditor	zsh/.oh-my-zsh/plugins/zsh-navigation-tools/.config/znt/n-functions.conf	/^local feditor="zed"$/;"	k
+location	fusesoc/fusesoc.conf	/^location = fusesoc_libraries\/fusesoc_cores$/;"	k	section:library.fusesoc_cores
 lodash	zsh/.oh-my-zsh/plugins/frontend-search/frontend-search.plugin.zsh	/^alias lodash='frontend lodash'$/;"	a
 log	zsh/.oh-my-zsh/plugins/heroku-alias/README.md	/^# log$/;"	c
 logic	nvim/lua/james/core/my_snippets/snippets/systemverilog.json	/^	"logic":{$/;"	o
@@ -16683,7 +16621,6 @@ lsn	zsh/.oh-my-zsh/plugins/common-aliases/common-aliases.plugin.zsh	/^alias lsn=
 lsr	zsh/.oh-my-zsh/plugins/common-aliases/common-aliases.plugin.zsh	/^alias lsr='ls -lARFh' #Recursive list of files and directories$/;"	a
 lstheme	zsh/.oh-my-zsh/plugins/themes/themes.plugin.zsh	/^function lstheme {$/;"	f
 lt	zsh/.oh-my-zsh/plugins/common-aliases/common-aliases.plugin.zsh	/^alias lt='ls -ltFh'   #long list,sorted by date,show type,human readable$/;"	a
-luasnip	NvChad/lua/plugins/configs/others.lua	/^M.luasnip = function(opts)$/;"	f	unknown:M
 lwd	zsh/.oh-my-zsh/plugins/last-working-dir/last-working-dir.plugin.zsh	/^lwd() {$/;"	f
 lxd	zsh/.oh-my-zsh/plugins/lxd/README.md	/^# lxd$/;"	c
 m	zsh/.oh-my-zsh/plugins/meteor/meteor.plugin.zsh	/^alias m='meteor run'                   # [default] Run this project in local development mode.$/;"	a
@@ -16755,7 +16692,6 @@ marked2	zsh/.oh-my-zsh/plugins/marked2/README.md	/^## marked2$/;"	s
 marks	zsh/.oh-my-zsh/plugins/jump/jump.plugin.zsh	/^marks() {$/;"	f
 marktext	zsh/.oh-my-zsh/plugins/marktext/README.md	/^## marktext$/;"	s
 marktext	zsh/.oh-my-zsh/plugins/marktext/marktext.plugin.zsh	/^function marktext() {$/;"	f
-mason.nvim	NvChad/lazy-lock.json	/^  "mason.nvim": { "branch": "main", "commit": "7caf4f7143b4b2e17fe0e893bdd05c622c508207" },$/;"	o
 master	tmux/plugins/tmux-sensible/CHANGELOG.md	/^### master$/;"	S	chapter:Changelog
 master	tmux/plugins/tpm/CHANGELOG.md	/^### master$/;"	S	chapter:Changelog
 mau	zsh/.oh-my-zsh/plugins/meteor/meteor.plugin.zsh	/^alias mau='meteor authorized'          # View or change authorized users and organizations for a/;"	a
@@ -16931,21 +16867,13 @@ npm_toggle_install_uninstall	zsh/.oh-my-zsh/plugins/npm/npm.plugin.zsh	/^npm_tog
 npmg	zsh/.oh-my-zsh/plugins/npm/npm.plugin.zsh	/^alias npmg="npm i -g "$/;"	a
 npmi	zsh/.oh-my-zsh/plugins/npm/npm.plugin.zsh	/^alias npmi="npm info"$/;"	a
 npmjs	zsh/.oh-my-zsh/plugins/frontend-search/frontend-search.plugin.zsh	/^alias npmjs='frontend npmjs'$/;"	a
+npmrd	zsh/.oh-my-zsh/plugins/npm/npm.plugin.zsh	/^alias npmrd="npm run dev"$/;"	a
 npmst	zsh/.oh-my-zsh/plugins/npm/npm.plugin.zsh	/^alias npmst="npm start"$/;"	a
 npmt	zsh/.oh-my-zsh/plugins/npm/npm.plugin.zsh	/^alias npmt="npm test"$/;"	a
-null-ls.nvim	NvChad/lazy-lock.json	/^  "null-ls.nvim": { "branch": "main", "commit": "f8ffcd7cb8fb3325c711d459152ef132b5b65aed" },$/;"	o
 nv	zsh/.oh-my-zsh/plugins/nanoc/nanoc.plugin.zsh	/^alias nv='nanoc view'$/;"	a
-nvim-autopairs	NvChad/lazy-lock.json	/^  "nvim-autopairs": { "branch": "master", "commit": "7470af886ffb3df32800e5ef9c072a6cd825770d" }/;"	o
-nvim-cmp	NvChad/lazy-lock.json	/^  "nvim-cmp": { "branch": "main", "commit": "777450fd0ae289463a14481673e26246b5e38bf2" },$/;"	o
-nvim-colorizer.lua	NvChad/lazy-lock.json	/^  "nvim-colorizer.lua": { "branch": "master", "commit": "dde3084106a70b9a79d48f426f6d6fec6fd203f/;"	o
-nvim-lspconfig	NvChad/lazy-lock.json	/^  "nvim-lspconfig": { "branch": "master", "commit": "e52efca5d4f5536533d447ec0d97e4d525b37ace" }/;"	o
-nvim-tree.lua	NvChad/lazy-lock.json	/^  "nvim-tree.lua": { "branch": "master", "commit": "6ad5c26f4d44791699c5538d9773cb141ba033e7" },$/;"	o
-nvim-treesitter	NvChad/lazy-lock.json	/^  "nvim-treesitter": { "branch": "master", "commit": "dad0864fa324d1df88242a978e9d7de383c5be68" /;"	o
-nvim-web-devicons	NvChad/lazy-lock.json	/^  "nvim-web-devicons": { "branch": "master", "commit": "4ec26d67d419c12a4abaea02f1b6c57b40c08d7e/;"	o
 nvm	zsh/.oh-my-zsh/plugins/nvm/nvm.plugin.zsh	/^    function nvm node npm pnpm yarn $nvm_lazy_cmd {$/;"	f
 nvm plugin	zsh/.oh-my-zsh/plugins/nvm/README.md	/^# nvm plugin$/;"	c
 nvm_prompt_info	zsh/.oh-my-zsh/lib/nvm.zsh	/^function nvm_prompt_info() {$/;"	f
-nvterm	NvChad/lazy-lock.json	/^  "nvterm": { "branch": "main", "commit": "29a70ef608a8cc5db3a5fc300d39a39d1a44a863" },$/;"	o
 o	zsh/.oh-my-zsh/plugins/fasd/fasd.plugin.zsh	/^alias o='a -e xdg-open'$/;"	a
 oanward	zsh/.oh-my-zsh/plugins/lol/lol.plugin.zsh	/^alias oanward='git commit -m'$/;"	a
 obtw	zsh/.oh-my-zsh/plugins/lol/lol.plugin.zsh	/^alias obtw='nohup'$/;"	a
@@ -16965,11 +16893,11 @@ omz_termsupport_precmd	zsh/.oh-my-zsh/lib/termsupport.zsh	/^function omz_termsup
 omz_termsupport_preexec	zsh/.oh-my-zsh/lib/termsupport.zsh	/^function omz_termsupport_preexec {$/;"	f
 omz_urldecode	zsh/.oh-my-zsh/lib/functions.zsh	/^function omz_urldecode {$/;"	f
 omz_urlencode	zsh/.oh-my-zsh/lib/functions.zsh	/^function omz_urlencode() {$/;"	f
-on_attach	NvChad/lua/plugins/configs/lspconfig.lua	/^M.on_attach = function(client, bufnr)$/;"	f	unknown:M
-on_attach	NvChad/lua/plugins/configs/others.lua	/^  on_attach = function(bufnr)$/;"	f
 on_attach	nvim/lua/james/plugins/lspconfig.lua	/^local on_attach = function(client, bufnr)$/;"	f
+on_begin	nvim/lua/james/plugins/edgy/init.lua	/^    on_begin = function()$/;"	f
 on_colors	nvim/lua/james/core/themes/tokyonight-night.lua	/^    on_colors = function(colors)$/;"	f
 on_colors	nvim/lua/james/core/themes/tokyonight.lua	/^    on_colors = function(colors)$/;"	f
+on_end	nvim/lua/james/plugins/edgy/init.lua	/^    on_end = function()$/;"	f
 on_exit	nvim/lua/james/plugins/vunit/.old.init.lua	/^        on_exit = function()$/;"	f
 on_exit	nvim/lua/james/plugins/vunit/init.lua	/^        on_exit = function()$/;"	f
 on_stderr	nvim/lua/james/plugins/vunit/.old.init.lua	/^        on_stderr = function(_, data)$/;"	f
@@ -16981,7 +16909,6 @@ open_command	zsh/.oh-my-zsh/lib/functions.zsh	/^function open_command() {$/;"	f
 open_lighthouse_ticket	zsh/.oh-my-zsh/plugins/lighthouse/lighthouse.plugin.zsh	/^open_lighthouse_ticket () {$/;"	f
 open_url	tmux/plugins/tmux-fzf-url/fzf-url.sh	/^open_url() {$/;"	f
 option_value_not_changed	tmux/plugins/tmux-sensible/sensible.tmux	/^option_value_not_changed() {$/;"	f
-opts	NvChad/lua/plugins/init.lua	/^    opts = function()$/;"	f
 opts	zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/terminal_session.rb	/^  attr_reader :opts$/;"	A	class:TerminalSession
 ot	zsh/.oh-my-zsh/plugins/otp/otp.plugin.zsh	/^function ot () {$/;"	f
 otp plugin	zsh/.oh-my-zsh/plugins/otp/README.md	/^# otp plugin$/;"	c
@@ -17130,7 +17057,6 @@ pjo	zsh/.oh-my-zsh/plugins/pj/pj.plugin.zsh	/^alias pjo="pj open"$/;"	a
 pl	zsh/.oh-my-zsh/plugins/pipenv/pipenv.plugin.zsh	/^alias pl="pipenv lock"$/;"	a
 ple	zsh/.oh-my-zsh/plugins/perl/perl.plugin.zsh	/^alias ple='perl -wlne'$/;"	a
 please plugin	zsh/.oh-my-zsh/plugins/please/README.md	/^# please plugin$/;"	c
-plenary.nvim	NvChad/lazy-lock.json	/^  "plenary.nvim": { "branch": "master", "commit": "9ac3e9541bbabd9d73663d757e4fe48a675bb054" },$/;"	o
 pli	zsh/.oh-my-zsh/plugins/macports/macports.plugin.zsh	/^alias pli="port livecheck installed"$/;"	a
 plm	zsh/.oh-my-zsh/plugins/macports/macports.plugin.zsh	/^alias plm="port-livecheck-maintainer"$/;"	a
 plugin_already_installed	tmux/plugins/tpm/scripts/helpers/plugin_functions.sh	/^plugin_already_installed() {$/;"	f
@@ -17233,6 +17159,7 @@ pull_changes	tmux/plugins/tpm/scripts/update_plugin.sh	/^pull_changes() {$/;"	f
 puni	zsh/.oh-my-zsh/plugins/macports/macports.plugin.zsh	/^alias puni="sudo port uninstall inactive"$/;"	a
 puo	zsh/.oh-my-zsh/plugins/macports/macports.plugin.zsh	/^alias puo="sudo port upgrade outdated"$/;"	a
 pup	zsh/.oh-my-zsh/plugins/macports/macports.plugin.zsh	/^alias pup="sudo port selfupdate && sudo port upgrade outdated"$/;"	a
+pupd	zsh/.oh-my-zsh/plugins/pipenv/pipenv.plugin.zsh	/^alias pupd="pipenv update"$/;"	a
 push_future	zsh/.oh-my-zsh/plugins/dirhistory/dirhistory.plugin.zsh	/^function push_future() {$/;"	f
 push_past	zsh/.oh-my-zsh/plugins/dirhistory/dirhistory.plugin.zsh	/^function push_past() {$/;"	f
 pushdf	zsh/.oh-my-zsh/plugins/macos/macos.plugin.zsh	/^function pushdf() {$/;"	f
@@ -17306,7 +17233,6 @@ regex_group	zsh/.oh-my-zsh/plugins/emoji/update_emoji.py	/^regex_group = r"^#\\s
 reload_tmux_environment	tmux/plugins/tpm/scripts/helpers/tmux_utils.sh	/^reload_tmux_environment() {$/;"	f
 reloadpost	zsh/.oh-my-zsh/plugins/postgres/postgres.plugin.zsh	/^alias reloadpost="pg_ctl reload -D $PG_BREW_DIR -s"$/;"	a
 remote_console	zsh/.oh-my-zsh/plugins/rails/rails.plugin.zsh	/^function remote_console() {$/;"	f
-remove_disabled_keys	NvChad/lua/core/utils.lua	/^M.remove_disabled_keys = function(chadrc_mappings, default_mappings)$/;"	f	unknown:M
 remove_test-runner.sh	tmuxifier/Makefile	/^remove_test-runner.sh:$/;"	t
 remove_test/assert.sh	tmuxifier/Makefile	/^remove_test\/assert.sh:$/;"	t
 remove_test/stub.sh	tmuxifier/Makefile	/^remove_test\/stub.sh:$/;"	t
@@ -17526,7 +17452,6 @@ set644	zsh/.oh-my-zsh/plugins/perms/perms.plugin.zsh	/^function set644 {$/;"	f
 set755	zsh/.oh-my-zsh/plugins/perms/perms.plugin.zsh	/^function set755 {$/;"	f
 set_default_tpm_path	tmux/plugins/tpm/tpm	/^set_default_tpm_path() {$/;"	f
 set_keymaps	nvim/lua/james/plugins/fine-cmdline.lua	/^      set_keymaps = function(imap, feedkeys)$/;"	f
-set_section_map	NvChad/lua/core/utils.lua	/^    local function set_section_map(section_values)$/;"	f
 set_tpm_key_bindings	tmux/plugins/tpm/tpm	/^set_tpm_key_bindings() {$/;"	f
 set_tpm_path	tmux/plugins/tpm/tpm	/^set_tpm_path() {$/;"	f
 set_wallpaper	awesome/rc.lua	/^local function set_wallpaper(s)$/;"	f
@@ -17875,6 +17800,7 @@ st	zsh/.oh-my-zsh/plugins/sublime/sublime.plugin.zsh	/^alias st=subl$/;"	a
 stackoverflow	zsh/.oh-my-zsh/plugins/frontend-search/frontend-search.plugin.zsh	/^alias stackoverflow='frontend stackoverflow'$/;"	a
 stackoverflow	zsh/.oh-my-zsh/plugins/web-search/web-search.plugin.zsh	/^alias stackoverflow='web_search stackoverflow'$/;"	a
 staged	zsh/.oh-my-zsh/plugins/git-prompt/gitstatus.py	/^untracked, staged, changed, deleted, conflicts = [], [], [], [], []$/;"	v
+starship plugin	zsh/.oh-my-zsh/plugins/starship/README.md	/^# starship plugin$/;"	c
 startpost	zsh/.oh-my-zsh/plugins/postgres/postgres.plugin.zsh	/^alias startpost="pg_ctl -D $PG_BREW_DIR -l $PG_BREW_DIR\/server.log start"$/;"	a
 stashed	zsh/.oh-my-zsh/plugins/git-prompt/gitstatus.py	/^stashed = get_stash()$/;"	v
 status	zsh/.oh-my-zsh/plugins/emoji/update_emoji.py	/^        code_points, status, emoji, name = emoji_match[0]$/;"	v
@@ -17980,6 +17906,7 @@ sxw	zsh/.oh-my-zsh/plugins/singlechar/singlechar.plugin.zsh	/^alias sxw='"$ROOT"
 sxy	zsh/.oh-my-zsh/plugins/singlechar/singlechar.plugin.zsh	/^alias sxy='"$ROOT" xargs "$GREP" -Ri'$/;"	a
 sy	zsh/.oh-my-zsh/plugins/singlechar/singlechar.plugin.zsh	/^alias sy='"$ROOT" "$GREP" -Ri'$/;"	a
 syn20	zsh/.oh-my-zsh/plugins/systemadmin/systemadmin.plugin.zsh	/^function syn20() {$/;"	f
+sync	fusesoc/fusesoc.conf	/^auto-sync = true$/;"	k	section:library.fusesoc_cores
 synchronize_off	tmuxifier/lib/layout-helpers.sh	/^synchronize_off() {$/;"	f
 synchronize_on	tmuxifier/lib/layout-helpers.sh	/^synchronize_on() {$/;"	f
 sys.stdin.read	zsh/.oh-my-zsh/plugins/jsontools/jsontools.plugin.zsh	/^  json.loads(sys.stdin.read())$/;"	f
@@ -19717,7 +19644,6 @@ taskwarrior	zsh/.oh-my-zsh/plugins/taskwarrior/README.md	/^# taskwarrior$/;"	c
 tbe	zsh/.oh-my-zsh/plugins/toolbox/toolbox.plugin.zsh	/^alias tbe="toolbox enter"$/;"	a
 tbr	zsh/.oh-my-zsh/plugins/toolbox/toolbox.plugin.zsh	/^alias tbr="toolbox run"$/;"	a
 te	zsh/.oh-my-zsh/plugins/emacs/emacs.plugin.zsh	/^alias te="$EMACS_PLUGIN_LAUNCHER -nw"$/;"	a
-telescope.nvim	NvChad/lazy-lock.json	/^  "telescope.nvim": { "branch": "master", "commit": "6258d50b09f9ae087317e392efe7c05a7323492d" }/;"	o
 term_tab plugin	zsh/.oh-my-zsh/plugins/term_tab/README.md	/^# term_tab plugin$/;"	c
 terminates the prompt and begins a new one	zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/async_spec.rb	/^    it 'terminates the prompt and begins a new one' do$/;"	i	describe:with asynchronous suggestions enabled.pressing ^C after fetching a suggestion
 test	tmuxifier/Makefile	/^test: bootstrap$/;"	t
@@ -19846,13 +19772,13 @@ txl	zsh/.oh-my-zsh/plugins/tmuxinator/tmuxinator.plugin.zsh	/^alias txl='tmuxina
 txn	zsh/.oh-my-zsh/plugins/tmuxinator/tmuxinator.plugin.zsh	/^alias txn='tmuxinator new'$/;"	a
 txo	zsh/.oh-my-zsh/plugins/tmuxinator/tmuxinator.plugin.zsh	/^alias txo='tmuxinator open'$/;"	a
 txs	zsh/.oh-my-zsh/plugins/tmuxinator/tmuxinator.plugin.zsh	/^alias txs='tmuxinator start'$/;"	a
+type	fusesoc/fusesoc.conf	/^sync-type = git$/;"	k	section:library.fusesoc_cores
 typedef enum	nvim/lua/james/core/my_snippets/snippets/systemverilog.json	/^	"typedef enum":{$/;"	o
 typedef struct packed	nvim/lua/james/core/my_snippets/snippets/systemverilog.json	/^	"typedef struct packed":{$/;"	o
 typescript	zsh/.oh-my-zsh/plugins/frontend-search/frontend-search.plugin.zsh	/^alias typescript='frontend typescript'$/;"	a
 typeset_p	zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/tests/test-highlighting.zsh	/^typeset_p() {$/;"	f
 u	zsh/.oh-my-zsh/plugins/singlechar/singlechar.plugin.zsh	/^alias u='"$CURL"'$/;"	a
 ua	zsh/.oh-my-zsh/plugins/universalarchive/universalarchive.plugin.zsh	/^function ua() {$/;"	f
-ui	NvChad/lazy-lock.json	/^  "ui": { "branch": "v2.0", "commit": "3e52dbbfff31912a5d1897fcb15051ad62d0c300" },$/;"	o
 unexport	zsh/.oh-my-zsh/plugins/common-aliases/common-aliases.plugin.zsh	/^alias unexport='unset'$/;"	a
 unheap	zsh/.oh-my-zsh/plugins/frontend-search/frontend-search.plugin.zsh	/^alias unheap='frontend unheap'$/;"	a
 unicode_version	zsh/.oh-my-zsh/plugins/emoji/gemoji_db.json	/^  , "unicode_version": ""$/;"	s	object:1064
@@ -21590,6 +21516,7 @@ update_test/assert.sh	tmuxifier/Makefile	/^update_test\/assert.sh: remove_test\/
 update_test/stub.sh	tmuxifier/Makefile	/^update_test\/stub.sh: remove_test\/stub.sh test\/stub.sh$/;"	t
 upgrade	zsh/.oh-my-zsh/plugins/archlinux/archlinux.plugin.zsh	/^function upgrade() {$/;"	f
 upgrade_oh_my_zsh	zsh/.oh-my-zsh/lib/functions.zsh	/^function upgrade_oh_my_zsh() {$/;"	f
+uri	fusesoc/fusesoc.conf	/^sync-uri = https:\/\/github.com\/fusesoc\/fusesoc-cores$/;"	k	section:library.fusesoc_cores
 urldecode	zsh/.oh-my-zsh/plugins/urltools/urltools.plugin.zsh	/^        alias urldecode="perl -e '\\$new=\\$ARGV[0]; \\$new =~ s\/\\%([A-Fa-f0-9]{2})\/pack(\\"C/;"	a
 urldecode	zsh/.oh-my-zsh/plugins/urltools/urltools.plugin.zsh	/^        alias urldecode='perl -MURI::Encode -ep "uri_decode($ARGV[0]);"'$/;"	a
 urldecode	zsh/.oh-my-zsh/plugins/urltools/urltools.plugin.zsh	/^        alias urldecode='perl -MURI::Escape -ep "uri_unescape($ARGV[0]);"'$/;"	a
@@ -21764,7 +21691,6 @@ when not added to any of the widget lists	zsh/.oh-my-zsh/custom/plugins/zsh-auto
 when suggestions are disabled	zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/widgets/fetch_spec.rb	/^  context 'when suggestions are disabled' do$/;"	c	describe:the `autosuggest-fetch` widget
 when using `completion` strategy	zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/integrations/client_zpty_spec.rb	/^  context 'when using `completion` strategy' do$/;"	c	describe:a running zpty command
 when using vi mode	zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/integrations/vi_mode_spec.rb	/^describe 'when using vi mode' do$/;"	d
-which-key.nvim	NvChad/lazy-lock.json	/^  "which-key.nvim": { "branch": "main", "commit": "4b73390eec680b4c061ea175eb32c0ff3412271d" }$/;"	o
 while loop	nvim/lua/james/core/my_snippets/snippets/systemverilog.json	/^	"while loop": {$/;"	o
 wiki	zsh/.oh-my-zsh/plugins/web-search/web-search.plugin.zsh	/^alias wiki='web_search duckduckgo \\!w'$/;"	a
 will fetch and display a suggestion	zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions/spec/widgets/fetch_spec.rb	/^    it 'will fetch and display a suggestion' do$/;"	i	context:the `autosuggest-fetch` widget.when suggestions are disabled
@@ -22074,6 +22000,7 @@ zshexit	zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions/src/strategies/complet
 zshexit	zsh/.oh-my-zsh/custom/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh	/^		zshexit() {$/;"	f
 zshrc	zsh/.oh-my-zsh/plugins/common-aliases/common-aliases.plugin.zsh	/^alias zshrc='${=EDITOR} ${ZDOTDIR:-$HOME}\/.zshrc' # Quick access to the .zshrc file$/;"	a
 zshz	zsh/.oh-my-zsh/plugins/z/z.plugin.zsh	/^zshz() {$/;"	f
+zshz_cd	zsh/.oh-my-zsh/plugins/z/z.plugin.zsh	/^  zshz_cd() {$/;"	f
 zsi	zsh/.oh-my-zsh/plugins/suse/suse.plugin.zsh	/^alias zsi='sudo zypper si'$/;"	a
 zsource-download	zsh/.oh-my-zsh/plugins/suse/suse.plugin.zsh	/^alias zsource-download='sudo zypper source-download'$/;"	a
 zspec	zsh/.oh-my-zsh/plugins/zeus/zeus.plugin.zsh	/^alias zspec='zeus rspec'$/;"	a
@@ -22098,6 +22025,7 @@ zwp	zsh/.oh-my-zsh/plugins/suse/suse.plugin.zsh	/^alias zwp='zypper --no-refresh
 {cur_widget}	zsh/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh	/^             _zsh_highlight_widget_${cur_widget}() { :; _zsh_highlight }$/;"	f
 {pp,is,urlencode,urldecode}_ndjson	zsh/.oh-my-zsh/plugins/jsontools/jsontools.plugin.zsh	/^function {pp,is,urlencode,urldecode}_ndjson() {$/;"	f
 {wrapped_name}	zsh/.oh-my-zsh/plugins/vi-mode/vi-mode.plugin.zsh	/^        function ${wrapped_name}() {$/;"	f
+⚠️ ENABLING THIS PLUGIN WILL UNSET YOUR ZSH_THEME VARIABLE	zsh/.oh-my-zsh/plugins/starship/README.md	/^## ⚠️ ENABLING THIS PLUGIN WILL UNSET YOUR ZSH_THEME VARIABLE$/;"	s	chapter:Installation
 ✨ Features	nvim/README.md	/^## ✨ Features$/;"	s
 👐 Contributing	nvim/README.md	/^## 👐 Contributing$/;"	s
 💡 Tips	tmux/plugins/tmux-fzf-url/README.md	/^### 💡 Tips$/;"	S	chapter:tmux-fzf-url

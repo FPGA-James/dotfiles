@@ -56,7 +56,7 @@ window:
   # Values for `decorations` (macOS only):
   #     - transparent: Title bar, transparent background and title bar buttons
   #     - buttonless: Title bar, transparent background, but no title bar buttons
-  #decorations: full
+  decorations: none
 
   # Startup Mode (changes require restart)
   #
@@ -70,7 +70,7 @@ window:
   #startup_mode: Windowed
 
   # Window title
-  title: Alacritty
+  title: Noney
 
   # Window class (Linux/BSD only):
   class:
@@ -116,7 +116,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Source Code Pro
+    #family: Source Code Pro
     # family: CodeNewRoman Nerd Font
     # family: RobotoMono Nerd Font
     # family: Hack
@@ -124,7 +124,7 @@ font:
     # family: UbuntuMono Nerd Font
     # family: Monofur Nerd Font
     # family: TerminessTTF Nerd Font
-    # family: Mononoki Nerd Font
+    family: Mononoki Nerd Font
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -615,7 +615,7 @@ colors: *DoomOne
   #save_to_clipboard: false
 
 # Allow terminal applications to change Alacritty's window title.
-#dynamic_title: true
+dynamic_title: true
 
 #cursor:
   # Cursor style
