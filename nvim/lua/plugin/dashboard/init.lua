@@ -61,9 +61,9 @@ dashboard.section.header.val = fpga_banner
 -- Menu
 dashboard.section.buttons.val = {
   dashboard.button('e', '  New file',          ':ene <BAR> startinsert<CR>'    ),
-  dashboard.button('f', '  Find file',         ':Telescope fd cwd=<CR>'     ),
-  dashboard.button('p', '  Projects',          "<cmd> lua require'telescope'.extensions.project.project{ } <CR>"),
-  dashboard.button('g', '  Git Status',        ':Telescope git_status<CR>'          ),
+  dashboard.button('f', '  Find file',         ':Telescope fd cwd= theme=ivy <CR>'     ),
+  dashboard.button('p', '  Projects',          "<cmd> lua require'telescope'.extensions.project.project{ } theme=ivy <CR>"),
+  dashboard.button('g', '  Git Status',        ':Telescope git_status theme=ivy <CR>'          ),
   dashboard.button('s', '  Settings',          ':e $MYVIMRC<CR>'               ),
   dashboard.button('u', '  Update plugins',    ':PackerUpdate<CR>'             ),
   dashboard.button('q', '  Quit',              ':qa<CR>'                       ),

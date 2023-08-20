@@ -28,7 +28,10 @@
 
 --------------------------------------------------------------------------------
 --nvim-tree
-vim.keymap.set('n', '<C-f>', ':NvimTreeToggle <CR> ')
+-- vim.keymap.set('n', '<C-f>', ':NvimTreeToggle <CR> ')
+
+vim.keymap.set('n', '<C-f>', ':Neotree filesystem left toggle <CR> ')
+
 
 vim.keymap.set("n", "<C-d>", "<C-d>zz") -- half page down jump with cursor in the middle
 vim.keymap.set("n", "<C-u>", "<C-u>zz") -- half page up jump with cursor in the middle
@@ -125,15 +128,15 @@ vim.keymap.set("n", "gR", "<cmd>TroubleToggle lsp_references<cr>", bufopts)
 -- Telescope
 local builtin = require('telescope.builtin')
 --vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
-vim.keymap.set('n', '<leader>ff', "<cmd> Telescope fd path_display={'smart'} <cr>", {})
-vim.keymap.set('n', '<leader>fg', "<cmd> Telescope live_grep  path_display={'smart'} <cr>", {})
-vim.keymap.set('n', '<leader>fb', "<cmd> Telescope buffers    path_display={'smart'} <cr>", {})
+vim.keymap.set('n', '<leader>ff', "<cmd> Telescope fd path_display={'smart'} theme=ivy <cr>", {})
+vim.keymap.set('n', '<leader>fg', "<cmd> Telescope live_grep  path_display={'smart'} theme=ivy<cr>", {})
+vim.keymap.set('n', '<leader>fb', "<cmd> Telescope buffers    path_display={'smart'} theme=ivy <cr>", {})
 --vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
 vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
 vim.keymap.set('n', '<leader>ft', builtin.tags, {})
 vim.keymap.set('n', '<leader>fr', builtin.registers, {})
-vim.keymap.set('n', '<leader>fk', "<cmd> Telescope keymaps <cr>", bufopts)
-vim.keymap.set('n', '<leader>fe', "<cmd> Telescope file_browser <cr>", bufopts)
+vim.keymap.set('n', '<leader>fk', "<cmd> Telescope keymaps theme=ivy <cr>", bufopts)
+vim.keymap.set('n', '<leader>fe', "<cmd> Telescope file_browser theme=ivy <cr>", bufopts)
 -- SESSIONS
 vim.keymap.set('n', '<leader>s', "<cmd> SearchSession <cr>")
 --picker
@@ -184,7 +187,7 @@ vim.keymap.set('n', '<C-/>', '<cmd> :tab <CR>:exec("tag ".expand("<cword>"))<CR>
 
 -------------------------------------------------------------------------------
 -- Org-mode & Telekasten (org-roam)
-vim.keymap.set("n", "<leader>os", '<cmd>lua require("telekasten").search_notes() <CR>', bufots)
+vim.keymap.set("n", "<leader>os", '<cmd>lua require("telekasten").search_notes() theme=ivy <CR>', bufots)
 vim.keymap.set("n", "<leader>nsc", '<cmd>lua require("telekasten").show_calendar() <CR>', bufots)
 vim.keymap.set("n", "<leader>op", '<cmd>lua require("telekasten").panel() <CR>', bufots)
 

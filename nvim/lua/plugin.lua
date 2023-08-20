@@ -33,7 +33,6 @@ end
 return packer.startup(function(use)
     -- packer can manage itself
     use { "wbthomason/packer.nvim" }
- 
     --------------------------------------------------------------------------------------
     -- Base plugins used by other plugins ------------------------------------------------
     use { "nvim-lua/plenary.nvim" } -- lua functions that many plugins use
@@ -153,10 +152,10 @@ return packer.startup(function(use)
     }
     ------------------------------------------------------------------------------------------
     -- EDGY
-    use {"folke/edgy.nvim",
-        config = [[require('plugin.edgy')]]
-    }
-
+    -- use {"folke/edgy.nvim",
+    --     config = [[require('plugin.edgy')]]
+    -- }
+    -- use {"dstadelm/vim-vunit"}
     ------------------------------------------------------------------------------------------
     --Neo-tree
     use {  "nvim-neo-tree/neo-tree.nvim",
@@ -173,11 +172,11 @@ return packer.startup(function(use)
     ---- Editor Plugins ----------------------------------------------------------------------
     use { 'mbbill/undotree' } -- undo tree
     -- use { 'gelguy/wilder.nvim' } -- better cmd line autofill
-
+    use {'mg979/vim-visual-multi'}
     ------------------------------------------------------------------------------------------
     ---- Dashboard plugins -------------------------------------------------------------------
     use { 'goolord/alpha-nvim', config = [[require('plugin.dashboard')]] } -- Alpha dashboard configuration
-    use { 'sidebar-nvim/sidebar.nvim', config = [[require('plugin.sidebar')]] }
+    -- use { 'sidebar-nvim/sidebar.nvim', config = [[require('plugin.sidebar')]] }
 
     ------------------------------------------------------------------------------------------
     ---- Session & project plugins -----------------------------------------------------------

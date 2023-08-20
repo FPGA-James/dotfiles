@@ -132,12 +132,6 @@ _G.packer_plugins = {
     path = "/home/james/.local/share/nvim/site/pack/packer/start/diffview.nvim",
     url = "https://github.com/sindrets/diffview.nvim"
   },
-  ["edgy.nvim"] = {
-    config = { "require('plugin.edgy')" },
-    loaded = true,
-    path = "/home/james/.local/share/nvim/site/pack/packer/start/edgy.nvim",
-    url = "https://github.com/folke/edgy.nvim"
-  },
   ["fine-cmdline.nvim"] = {
     config = { "require('plugin.fine-cmdline')" },
     loaded = true,
@@ -285,12 +279,6 @@ _G.packer_plugins = {
     path = "/home/james/.local/share/nvim/site/pack/packer/start/ripgrep",
     url = "https://github.com/BurntSushi/ripgrep"
   },
-  ["sidebar.nvim"] = {
-    config = { "require('plugin.sidebar')" },
-    loaded = true,
-    path = "/home/james/.local/share/nvim/site/pack/packer/start/sidebar.nvim",
-    url = "https://github.com/sidebar-nvim/sidebar.nvim"
-  },
   tagbar = {
     loaded = true,
     path = "/home/james/.local/share/nvim/site/pack/packer/start/tagbar",
@@ -400,6 +388,11 @@ _G.packer_plugins = {
     path = "/home/james/.local/share/nvim/site/pack/packer/start/vim-surround",
     url = "https://github.com/tpope/vim-surround"
   },
+  ["vim-visual-multi"] = {
+    loaded = true,
+    path = "/home/james/.local/share/nvim/site/pack/packer/start/vim-visual-multi",
+    url = "https://github.com/mg979/vim-visual-multi"
+  },
   ["which-key.nvim"] = {
     config = { "\27LJ\2\nt\0\0\3\0\a\0\0156\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\0\0009\0\1\0)\1,\1=\1\3\0006\0\4\0'\2\5\0B\0\2\0029\0\6\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14which-key\frequire\15timeoutlen\ftimeout\6o\bvim\0" },
     loaded = true,
@@ -417,66 +410,58 @@ time([[Config for lsp-toggle.nvim]], false)
 time([[Config for orgmode]], true)
 require('plugin.orgmode')
 time([[Config for orgmode]], false)
--- Config for: lsp-zero.nvim
-time([[Config for lsp-zero.nvim]], true)
-require('plugin.lsp')
-time([[Config for lsp-zero.nvim]], false)
--- Config for: lualine.nvim
-time([[Config for lualine.nvim]], true)
-require('plugin.lualine')
-time([[Config for lualine.nvim]], false)
--- Config for: nvim-tree.lua
-time([[Config for nvim-tree.lua]], true)
-require('plugin.nvim-tree')
-time([[Config for nvim-tree.lua]], false)
--- Config for: Comment.nvim
-time([[Config for Comment.nvim]], true)
-require('plugin.Comment')
-time([[Config for Comment.nvim]], false)
--- Config for: edgy.nvim
-time([[Config for edgy.nvim]], true)
-require('plugin.edgy')
-time([[Config for edgy.nvim]], false)
--- Config for: fine-cmdline.nvim
-time([[Config for fine-cmdline.nvim]], true)
-require('plugin.fine-cmdline')
-time([[Config for fine-cmdline.nvim]], false)
--- Config for: alpha-nvim
-time([[Config for alpha-nvim]], true)
-require('plugin.dashboard')
-time([[Config for alpha-nvim]], false)
--- Config for: sidebar.nvim
-time([[Config for sidebar.nvim]], true)
-require('plugin.sidebar')
-time([[Config for sidebar.nvim]], false)
--- Config for: bufferline.nvim
-time([[Config for bufferline.nvim]], true)
-require('plugin.bufferline')
-time([[Config for bufferline.nvim]], false)
 -- Config for: telescope.nvim
 time([[Config for telescope.nvim]], true)
 require('plugin.telescope')
 time([[Config for telescope.nvim]], false)
--- Config for: telekasten.nvim
-time([[Config for telekasten.nvim]], true)
-require('plugin.telekasten')
-time([[Config for telekasten.nvim]], false)
--- Config for: todo-comments.nvim
-time([[Config for todo-comments.nvim]], true)
-require('plugin.todo-comments')
-time([[Config for todo-comments.nvim]], false)
+-- Config for: bufferline.nvim
+time([[Config for bufferline.nvim]], true)
+require('plugin.bufferline')
+time([[Config for bufferline.nvim]], false)
+-- Config for: lsp-zero.nvim
+time([[Config for lsp-zero.nvim]], true)
+require('plugin.lsp')
+time([[Config for lsp-zero.nvim]], false)
+-- Config for: alpha-nvim
+time([[Config for alpha-nvim]], true)
+require('plugin.dashboard')
+time([[Config for alpha-nvim]], false)
 -- Config for: which-key.nvim
 time([[Config for which-key.nvim]], true)
 try_loadstring("\27LJ\2\nt\0\0\3\0\a\0\0156\0\0\0009\0\1\0+\1\2\0=\1\2\0006\0\0\0009\0\1\0)\1,\1=\1\3\0006\0\4\0'\2\5\0B\0\2\0029\0\6\0004\2\0\0B\0\2\1K\0\1\0\nsetup\14which-key\frequire\15timeoutlen\ftimeout\6o\bvim\0", "config", "which-key.nvim")
 time([[Config for which-key.nvim]], false)
--- Config for: trouble.nvim
-time([[Config for trouble.nvim]], true)
-require('plugin.lsp.trouble')
-time([[Config for trouble.nvim]], false)
+-- Config for: nvim-tree.lua
+time([[Config for nvim-tree.lua]], true)
+require('plugin.nvim-tree')
+time([[Config for nvim-tree.lua]], false)
+-- Config for: todo-comments.nvim
+time([[Config for todo-comments.nvim]], true)
+require('plugin.todo-comments')
+time([[Config for todo-comments.nvim]], false)
+-- Config for: Comment.nvim
+time([[Config for Comment.nvim]], true)
+require('plugin.Comment')
+time([[Config for Comment.nvim]], false)
 -- Config for: nvim-treesitter
 time([[Config for nvim-treesitter]], true)
 require('plugin.treesitter')
 time([[Config for nvim-treesitter]], false)
+-- Config for: fine-cmdline.nvim
+time([[Config for fine-cmdline.nvim]], true)
+require('plugin.fine-cmdline')
+time([[Config for fine-cmdline.nvim]], false)
+-- Config for: telekasten.nvim
+time([[Config for telekasten.nvim]], true)
+require('plugin.telekasten')
+time([[Config for telekasten.nvim]], false)
+-- Config for: lualine.nvim
+time([[Config for lualine.nvim]], true)
+require('plugin.lualine')
+time([[Config for lualine.nvim]], false)
+-- Config for: trouble.nvim
+time([[Config for trouble.nvim]], true)
+require('plugin.lsp.trouble')
+time([[Config for trouble.nvim]], false)
 
 _G._packer.inside_compile = false
 if _G._packer.needs_bufread == true then

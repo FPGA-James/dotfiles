@@ -52,24 +52,24 @@ bottom = {
         size = { height = 0.5 },
         open = "Neotree position=top filesystem",
       },
-      {
-        title = "Neo-Tree Git",
-        ft = "neo-tree",
-        filter = function(buf)
-          return vim.b[buf].neo_tree_source == "git_status"
-        end,
-        pinned = true,
-        open = "Neotree position=right git_status",
-      },
-      {
-        title = "Neo-Tree Buffers",
-        ft = "neo-tree",
-        filter = function(buf)
-          return vim.b[buf].neo_tree_source == "buffers"
-        end,
-        pinned = true,
-        open = "Neotree position=bottom buffers",
-      },
+      -- {
+      --   title = "Neo-Tree Git",
+      --   ft = "neo-tree",
+      --   filter = function(buf)
+      --     return vim.b[buf].neo_tree_source == "git_status"
+      --   end,
+      --   pinned = true,
+      --   open = "Neotree position=right git_status",
+      -- },
+      -- {
+      --   title = "Neo-Tree Buffers",
+      --   ft = "neo-tree",
+      --   filter = function(buf)
+      --     return vim.b[buf].neo_tree_source == "buffers"
+      --   end,
+      --   pinned = true,
+      --   open = "Neotree position=bottom buffers",
+      -- },
       -- any other neo-tree windows
       "neo-tree",
     },

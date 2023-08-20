@@ -23,6 +23,7 @@ telescope.setup {
         },
         -- prompt_prefix = "> ",
         selection_caret = "> ",
+        theme = "ivy",
         entry_prefix = "  ",
         --hidden = true,
         initial_mode = "insert",
@@ -56,9 +57,10 @@ telescope.setup {
     },
     pickers = {
         find_files = {
+            theme = "ivy",
             -- I don't like having the cwd prefix in my files
             find_command = { "fdfind", "--strip-cwd-prefix", "--type", "f" },
-            hidden = true,  
+            hidden = true,
             mappings = {
                 n = {
                     ["kj"] = "close",
@@ -71,7 +73,7 @@ telescope.setup {
     },
     extensions = {
         file_browser = {
-            -- theme = "ivy",
+            theme = "ivy",
              -- disables netrw and use telescope-file-browser in its place
             hijack_netrw = true,
             hidden = true,
@@ -93,7 +95,7 @@ telescope.setup {
                 --{path = '~/dev/src5', max_depth = 2},
             },
             hidden_files = true, -- default: false
-            theme = "dropdown",
+            theme = "ivy",
             order_by = "asc",
             search_by = "title",
             sync_with_nvim_tree = true, -- default false

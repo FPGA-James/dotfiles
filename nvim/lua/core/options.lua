@@ -58,6 +58,15 @@ global.vimwiki_global_ext = 0
 global.vimwiki_list = {{syntax = 'markdown', ext= '.md'}}
 global.vimwiki_markdown_link_ext = 0
 
+-- vunit settings
+vim.cmd [[let g:VunitInvocationCmd = 'python3']]
+vim.cmd [[let g:VunitRunpyScriptName = 'run.py']]
+vim.cmd [[let g:VunitPreCmd = '']]
+vim.cmd [[let g:VunitGuiPreCmd = '' ]]
+vim.cmd [[let g:VunitGuiPreCmd = 'export $(tmux show-env | grep DISP);' ]]
+vim.cmd [[let g:VunitAdditionalOptions = '' ]]
+vim.cmd [[let g:VunitAdditionalOptions = '' ]]
+
 -- systemverilog tagbar
 vim.cmd [[ let g:tagbar_type_systemverilog = {
     \ 'ctagstype': 'systemverilog',
