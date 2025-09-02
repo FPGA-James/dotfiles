@@ -1,0 +1,15 @@
+-- TCL LSP configuration (using tcl-language-server if available)
+local lspconfig = require("lspconfig")
+
+lspconfig.tcl_ls.setup({
+  on_attach = function(client, bufnr)
+    vim.bo[bufnr].tabstop = 2
+    vim.bo[bufnr].shiftwidth = 2
+    vim.bo[bufnr].expandtab = true
+  end,
+  settings = {
+    tcl = {
+      diagnostics = { enable = true },
+    },
+  },
+})
