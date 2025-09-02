@@ -13,6 +13,7 @@ snacks.setup({
   features = {
     notifier    = true,
     git         = true,
+    terminal    = true,  -- enable picker with extended options
     picker      = true,  -- enable picker with extended options
     keymaps     = true,
   },
@@ -90,6 +91,30 @@ snacks.setup({
       },
     },
   },
+
+  terminal = {
+    -- Example options:
+    float = {
+      -- Floating window settings
+      border = "rounded",
+      width = 0.9,
+      height = 0.4,
+      winblend = 20,
+      -- The default shell for the terminal (optional)
+      shell = vim.o.shell,
+    },
+    split = {
+      -- Bottom split settings
+      height = 15,
+      direction = "horizontal",
+    },
+    -- Behavior when terminal buffer closes
+    on_exit = "close", -- could also be "hide" or "keep"
+    -- Toggle key mapping (to be set later)
+  },
+
+
+
 })
 
 -- Keymaps for picker commands
