@@ -30,7 +30,7 @@ wk.add({
   { "<leader>x",  group = "Diagnostics" },
     { "<leader>xd", function() Snacks.picker.diagnostics() end, desc = "Diagnostics" },
     { "<leader>xD", function() Snacks.picker.diagnostics_buffer() end, desc = "Buffer Diagnostics" },
-
+    { "<leader>xq", function() Snacks.picker.qflist() end, desc = "Quickfix List" },
     -- find groups
   { "<leader>f",  group = "find" },
   -- find
@@ -41,7 +41,7 @@ wk.add({
     { "<leader>fp", function() Snacks.picker.projects() end, desc = "Projects" },
     { "<leader>fr", function() Snacks.picker.recent() end, desc = "Recent" },
     { "<leader>fl", function() Snacks.picker.grep() end, desc = "Recent" },
-
+    { "<leader>fB", function() Snacks.picker.grep_buffers() end, desc = "Grep Open Buffers" },
   -- Snacks group
   { "<leader>g",  group = "Git/goto" },
     -- git
@@ -50,20 +50,28 @@ wk.add({
     { "<leader>gL", function() Snacks.picker.git_log_line() end, desc = "Git Log Line" },
     { "<leader>gs", function() Snacks.picker.git_status() end, desc = "Git Status" },
     { "<leader>gS", function() Snacks.picker.git_stash() end, desc = "Git Stash" },
-    { "<leader>gd", function() Snacks.picker.git_diff() end, desc = "Git Diff (Hunks)" },
+    -- { "<leader>gd", function() Snacks.picker.git_diff() end, desc = "Git Diff (Hunks)" },
     { "<leader>gf", function() Snacks.picker.git_log_file() end, desc = "Git Log File" },
     { "<leader>gB", function() Snacks.gitbrowse() end, desc = "Git Browse", mode = { "n", "v" } },
     { "<leader>gg", function() Snacks.lazygit() end, desc = "Lazygit" },
-  
+    -- LSP
+    { "gd", function() Snacks.picker.lsp_definitions() end, desc = "Goto Definition" },
+    { "gD", function() Snacks.picker.lsp_declarations() end, desc = "Goto Declaration" },
+    { "gr", function() Snacks.picker.lsp_references() end, nowait = true, desc = "References" },
+    { "gI", function() Snacks.picker.lsp_implementations() end, desc = "Goto Implementation" },
+    { "gy", function() Snacks.picker.lsp_type_definitions() end, desc = "Goto T[y]pe Definition" },
+    { "<leader>ss", function() Snacks.picker.lsp_symbols() end, desc = "LSP Symbols" },
+
+
   -- help
   { "<leader>h",  group = "Help" },
     { "<leader>ht", "<cmd>lua require('snacks').picker.help_tags()<CR>", desc = "Help Tags" },
     { "<leader>hk", "<cmd>lua require('snacks').picker.keymaps()<CR>", desc = "Search Keymaps" },
     { "<leader>ha", function() Snacks.picker.autocmds() end, desc = "Autocmds" },
-    { "<leader>hh",  function() Snacks.notifier.show_history() end, desc = "Notification History" },
+    { "<leader>hh", function() Snacks.notifier.show_history() end, desc = "Notification History" },
+    { '<leader>hs', function() Snacks.picker.search_history() end, desc = "Search History" },
   
-
-  -- Windows
+    -- Windows
   { "<leader>w",  group = "Window" },
     { "<leader>wv", "<cmd>vsplit<CR>", desc = "Vertical Split" },
     { "<leader>wx", "<cmd>split<CR>", desc = "Horizontal Split" },
@@ -89,38 +97,22 @@ wk.add({
   -- Keep important system mappings not covered by Snacks
   { "<leader>tt", "<cmd>terminal<CR>", desc = "Open Terminal (basic)" },
 
-    { "<leader><space>", function() Snacks.picker.smart() end, desc = "Smart Find Files" },
+    { "<leader><space>", function() Snacks.picker.files(cwd) end, desc = "Smart Find Files" },
     { "<leader>,", function() Snacks.picker.buffers() end, desc = "Buffers" },
     { "<leader>/", function() Snacks.picker.grep() end, desc = "Grep" },
     { "<leader>:", function() Snacks.picker.command_history() end, desc = "Command History" },
     { "<leader>n", function() Snacks.picker.notifications() end, desc = "Notification History" },
     { "<leader>e", function() Snacks.explorer() end, desc = "File Explorer" },
-    -- Grep
-    { "<leader>sb", function() Snacks.picker.lines() end, desc = "Buffer Lines" },
-    { "<leader>sB", function() Snacks.picker.grep_buffers() end, desc = "Grep Open Buffers" },
-    { "<leader>sg", function() Snacks.picker.grep() end, desc = "Grep" },
-    { "<leader>sw", function() Snacks.picker.grep_word() end, desc = "Visual selection or word", mode = { "n", "x" } },
     -- search
     { '<leader>s"', function() Snacks.picker.registers() end, desc = "Registers" },
-    { '<leader>s/', function() Snacks.picker.search_history() end, desc = "Search History" },
-    { "<leader>sb", function() Snacks.picker.lines() end, desc = "Buffer Lines" },
     { "<leader>sc", function() Snacks.picker.command_history() end, desc = "Command History" },
     { "<leader>sC", function() Snacks.picker.commands() end, desc = "Commands" },
     { "<leader>sh", function() Snacks.picker.help() end, desc = "Help Pages" },
     { "<leader>sj", function() Snacks.picker.jumps() end, desc = "Jumps" },
     { "<leader>sl", function() Snacks.picker.loclist() end, desc = "Location List" },
     -- { "<leader>sM", function() Snacks.picker.man() end, desc = "Man Pages" },
-    { "<leader>sq", function() Snacks.picker.qflist() end, desc = "Quickfix List" },
-    { "<leader>sR", function() Snacks.picker.resume() end, desc = "Resume" },
     { "<leader>su", function() Snacks.picker.undo() end, desc = "Undo History" },
     { "<leader>uC", function() Snacks.picker.colorschemes() end, desc = "Colorschemes" },
-    -- LSP
-    { "gd", function() Snacks.picker.lsp_definitions() end, desc = "Goto Definition" },
-    { "gD", function() Snacks.picker.lsp_declarations() end, desc = "Goto Declaration" },
-    { "gr", function() Snacks.picker.lsp_references() end, nowait = true, desc = "References" },
-    { "gI", function() Snacks.picker.lsp_implementations() end, desc = "Goto Implementation" },
-    { "gy", function() Snacks.picker.lsp_type_definitions() end, desc = "Goto T[y]pe Definition" },
-    { "<leader>ss", function() Snacks.picker.lsp_symbols() end, desc = "LSP Symbols" },
     { "<leader>sS", function() Snacks.picker.lsp_workspace_symbols() end, desc = "LSP Workspace Symbols" },
     -- Other
     { "<leader>z",  function() Snacks.zen() end, desc = "Toggle Zen Mode" },
