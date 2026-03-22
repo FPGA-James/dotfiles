@@ -1,2 +1,0 @@
-
-        require('render-markdown').setup({})
