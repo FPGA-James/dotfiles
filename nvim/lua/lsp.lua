@@ -14,6 +14,7 @@ vim.lsp.enable({
   "vhdl_ls",             -- VHDL
   "taplo",               -- TOML
   "yamlls",              -- YAML
+  "marksman",            -- Markdown (wikilink go-to-definition, completions)
   "sigasi",              -- VHDL / SystemVerilog (commercial, requires license)
 })
 
@@ -96,10 +97,8 @@ vim.api.nvim_create_autocmd("LspAttach", {
       end, vim.tbl_extend("force", opts, { desc = "Toggle inlay hints" }))
     end
 
-    -- Native completion (Neovim 0.11+)
-    if client and client:supports_method("textDocument/completion") then
-      vim.lsp.completion.enable(true, client.id, buf, { autotrigger = true })
-    end
+    -- Completion is handled by blink.cmp (lua/plugins/blink-cmp.lua).
+    -- Do NOT call vim.lsp.completion.enable() here — they conflict.
 
     -- If Sigasi is running, stop vhdl_ls on the same buffer to avoid
     -- duplicate hover/completion (keep verible for formatting).

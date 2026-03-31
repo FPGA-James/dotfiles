@@ -53,4 +53,97 @@ function vunit_launch() {
     fi
 }
 
-#
+#############################################
+# FZF
+export FZF_DEFAULT_COMMAND='fd --type f --hidden --exclude .git'
+export FZF_DEFAULT_OPTS='--height 40% --layout=reverse --border --preview-window=right:50%'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
+# fuzzy history search — puts selected command on the line without running
+function fh() {
+  local cmd
+  cmd=$(history | sort -rn | awk '{$1=""; print $0}' | fzf --tac --no-sort +m)
+  [[ -n $cmd ]] && print -z $cmd
+}
+
+# fuzzy cd into any subdirectory
+function fcd() {
+  local dir
+  dir=$(fd --type d --hidden --exclude .git | fzf --preview 'ls -la {}')
+  [[ -n $dir ]] && cd "$dir"
+}
+
+# fuzzy kill a process
+function fkill() {
+  local pid
+  pid=$(ps aux | tail -n +2 | fzf -m --header='[kill process]' | awk '{print $2}')
+  [[ -n $pid ]] && echo "$pid" | xargs kill -${1:-9}
+}
+
+# fuzzy git log with diff preview, enter opens in less
+function fgl() {
+  git log --oneline --color=always | \
+    fzf --ansi --preview 'git show --color=always {1}' \
+        --bind 'enter:execute(git show {1} | less -R)'
+}
+
+# fuzzy man page picker
+function fman() {
+  man -k . | fzf --prompt='man> ' --preview 'echo {} | awk "{print \$1}" | xargs man' | awk '{print $1}' | xargs man
+}
+
+# fuzzy branch checkout
+function gfb() {
+  local branch
+  branch=$(git branch -a --color=always | grep -v HEAD | fzf --ansi --preview 'git log --oneline --color=always {1}' | sed 's/remotes\/origin\///' | xargs)
+  [[ -n $branch ]] && git checkout "$branch"
+}
+
+# fuzzy tmux session attach or create
+function ta() {
+  local session
+  session=$(tmux list-sessions -F '#S' 2>/dev/null | fzf --prompt='tmux> ' --preview 'tmux list-windows -t {}')
+  if [[ -n $session ]]; then
+    tmux attach -t "$session"
+  else
+    tmux new-session -s "${1:-main}"
+  fi
+}
+
+#############################################
+# Python
+# activate venv in current or parent dir
+function va() {
+  [[ -f .venv/bin/activate ]] && source .venv/bin/activate && return
+  [[ -f venv/bin/activate ]]  && source venv/bin/activate  && return
+  echo "no venv found"
+}
+
+#############################################
+# File utilities
+
+# mkdir and cd into it
+function mkcd() { mkdir -p "$1" && cd "$1" }
+
+# backup a file with timestamp
+function bak() { cp "$1" "${1}.bak.$(date +%Y%m%d_%H%M%S)" }
+
+# universal archive extractor
+function extract() {
+  case "$1" in
+    *.tar.gz|*.tgz) tar xzf "$1" ;;
+    *.tar.bz2)       tar xjf "$1" ;;
+    *.zip)           unzip "$1"   ;;
+    *.gz)            gunzip "$1"  ;;
+    *.7z)            7z x "$1"    ;;
+    *) echo "unknown format: $1"  ;;
+  esac
+}
+
+#############################################
+# HDL / FPGA
+
+# GHDL: analyse, elaborate and run a testbench
+function ghdl_run() {
+  ghdl -a "$1" && ghdl -e "${2:-tb}" && ghdl -r "${2:-tb}" --wave=wave.ghw
+}

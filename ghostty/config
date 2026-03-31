@@ -1,0 +1,6 @@
+# Option key sends escape sequences (required for Alt+hjkl tmux bindings)
+font-size = 19
+background-blur-radius = 20
+mouse-hide-while-typing = true
+window-decoration = false
+macos-option-as-alt = true

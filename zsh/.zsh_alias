@@ -1,4 +1,4 @@
-alias v="fd --type f --hidden --exclude .git | fzf-tmux -p --reverse | xargs nvim"
+alias v="fd --type f --hidden --exclude .git | fzf-tmux -p --reverse --preview 'bat --color=always --line-range :50 {}' | xargs nvim"
 
 # Terminal 
 alias c="clear"
@@ -27,15 +27,46 @@ alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
 alias sgrep='grep -R -n -H -C 5 --exclude-dir={.git,.svn,CVS} '
 
-# ls: adding colors, verbose listign
-# and humanize the file sizes:
-alias ls="ls --color -l -h --group-directories-first"
-alias ll='ls -la'  ## Use a long listing format ##
-alias l.='ls -d .* --color=auto' ## Show hidden files ##
+# ls: eza with icons and git status
+alias ls='eza --group-directories-first --icons'
+alias ll='eza -lh --group-directories-first --icons --git'
+alias la='eza -lah --group-directories-first --icons --git'
+alias tree='eza --tree --icons'
 
 
 # mkdir: create parent directories
 alias mkdir="mkdir -pv"
+
+# bat (better cat)
+alias cat='bat --paging=never'
+alias catp='bat'
+
+# tldr
+alias tl='tldr'
+
+# Git
+alias ga='git add'
+alias gc='git commit'
+alias gp='git push'
+alias gpl='git pull'
+alias gl='git log --oneline --graph --decorate'
+alias gd='git diff'
+alias gco='git checkout'
+alias gcm='git checkout main 2>/dev/null || git checkout master'
+alias grb='git rebase'
+alias gst='git stash'
+alias gstp='git stash pop'
+
+# Python
+alias py='python3'
+alias pip='pip3'
+
+# Dotfiles
+alias dots='cd ~/.dotfiles'
+alias ez='nvim ~/.dotfiles/zsh/.zsh_alias ~/.dotfiles/zsh/.zsh_functions'
+
+# Network
+alias ports='lsof -iTCP -sTCP:LISTEN -n -P'
 
 
 

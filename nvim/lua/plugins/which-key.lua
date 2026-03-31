@@ -135,11 +135,25 @@ wk.setup({
 -- Mapping: { "<keys>", "<rhs>", desc = "description" }
 -- =============================================================================
 
+-- Returns a which-key icon table reflecting the current toggle state.
+-- \xef\x88\x85 = U+F205 nf-fa-toggle_on  (green when enabled)
+-- \xef\x88\x84 = U+F204 nf-fa-toggle_off (yellow when disabled)
+local function tog(state)
+  if state then
+    return { icon = "\xef\x88\x85 ", color = "green" }
+  else
+    return { icon = "\xef\x88\x84 ", color = "yellow" }
+  end
+end
+
 wk.add({
   -- ── Top-level shortcuts ───────────────────────────────────────────────────
   { "<leader><leader>", function() Snacks.picker.files() end, desc = "Find files" },
 
   -- ── Groups ────────────────────────────────────────────────────────────────
+  { "<leader>a",  group = "ai / claude" },
+  { "<leader>d",  group = "diff preview" },
+  { "<leader>o",  group = "obsidian" },
   { "<leader>b",  group = "buffers" },
   { "<leader>f",  group = "find / files" },
   { "<leader>g",  group = "git" },
@@ -156,38 +170,43 @@ wk.add({
   -- ── UI toggles ────────────────────────────────────────────────────────────
   -- Note: <leader>un / <leader>nh are wired in plugins/snacks.lua (notifications)
   --       <leader>uz / <leader>uZ are wired in plugins/snacks/zen.lua
+  -- icon is a function so which-key re-evaluates state each time the popup opens.
+  { "<leader>uh", "<cmd>nohlsearch<CR>", desc = "Clear search highlights" },
+  { "<leader>uN", function() vim.opt.number        = not vim.o.number        end, icon = function() return tog(vim.o.number)                   end, desc = "Line Numbers"     },
+  { "<leader>ur", function() vim.opt.relativenumber = not vim.o.relativenumber end, icon = function() return tog(vim.o.relativenumber)          end, desc = "Relative Numbers" },
+  { "<leader>uw", function() vim.opt.wrap           = not vim.o.wrap           end, icon = function() return tog(vim.o.wrap)                    end, desc = "Word Wrap"        },
+  { "<leader>us", function() vim.opt.spell          = not vim.o.spell          end, icon = function() return tog(vim.o.spell)                   end, desc = "Spell Check"      },
+  { "<leader>ul", function() vim.opt.list           = not vim.o.list           end, icon = function() return tog(vim.o.list)                    end, desc = "List Chars"       },
+  { "<leader>uL", function() vim.opt.cursorline     = not vim.o.cursorline     end, icon = function() return tog(vim.o.cursorline)              end, desc = "Cursor Line"      },
+  { "<leader>uc", function() vim.opt.conceallevel   = vim.o.conceallevel == 0 and 2 or 0 end, icon = function() return tog(vim.o.conceallevel > 0) end, desc = "Conceal (0↔2)" },
+  { "<leader>ud", function() vim.diagnostic.enable(not vim.diagnostic.is_enabled()) end,      icon = function() return tog(vim.diagnostic.is_enabled()) end, desc = "Diagnostics"  },
+  { "<leader>uC", function() vim.opt.colorcolumn    = vim.o.colorcolumn == "" and "80,100" or "" end, icon = function() return tog(vim.o.colorcolumn ~= "") end, desc = "Color Column" },
   {
-    "<leader>uN",
-    function() vim.opt.number = not vim.o.number end,
-    desc = "Toggle line numbers",
+    "<leader>ui",
+    function()
+      if vim.g.snacks_indent == false then
+        vim.g.snacks_indent = true
+        Snacks.indent.enable()
+      else
+        vim.g.snacks_indent = false
+        Snacks.indent.disable()
+      end
+    end,
+    icon = function() return tog(vim.g.snacks_indent ~= false) end,
+    desc = "Indent Guides",
   },
-  {
-    "<leader>ur",
-    function() vim.opt.relativenumber = not vim.o.relativenumber end,
-    desc = "Toggle relative numbers",
-  },
-  {
-    "<leader>uw",
-    function() vim.opt.wrap = not vim.o.wrap end,
-    desc = "Toggle line wrap",
-  },
-  {
-    "<leader>us",
-    function() vim.opt.spell = not vim.o.spell end,
-    desc = "Toggle spell check",
-  },
-  {
-    "<leader>uh",
-    "<cmd>nohlsearch<CR>",
-    desc = "Clear search highlights",
-  },
-  {
-    "<leader>ul",
-    function() vim.opt.list = not vim.o.list end,
-    desc = "Toggle list chars",
-  },
+  { "<leader>uf", function() vim.g.conform_format_on_save = not vim.g.conform_format_on_save end, icon = function() return tog(vim.g.conform_format_on_save) end, desc = "Format on Save"  },
+  { "<leader>uB", function() vim.o.background = vim.o.background == "dark" and "light" or "dark" end, icon = function() return tog(vim.o.background == "dark") end, desc = "Dark Background" },
 
-  -- ── Window shortcuts ──────────────────────────────────────────────────────
+  -- ── Claude Preview ────────────────────────────────────────────────────────
+  -- <leader>dq is also set by the plugin itself; registering here adds the
+  -- which-key description without conflicting.
+  { "<leader>dq", desc = "Close diff" },
+  { "<leader>di", "<cmd>ClaudePreviewInstallHooks<CR>",   desc = "Install hooks" },
+  { "<leader>du", "<cmd>ClaudePreviewUninstallHooks<CR>", desc = "Uninstall hooks" },
+  { "<leader>ds", "<cmd>ClaudePreviewStatus<CR>",         desc = "Status" },
+
+  -- ── Window shortcuts (Snacks.toggle keymaps are registered below) ─────────
   { "<leader>wh", "<C-w>h",          desc = "Go to left window" },
   { "<leader>wj", "<C-w>j",          desc = "Go to lower window" },
   { "<leader>wk", "<C-w>k",          desc = "Go to upper window" },
@@ -197,10 +216,13 @@ wk.add({
   { "<leader>wq", "<cmd>close<CR>",  desc = "Close window" },
 
   -- ── Buffer shortcuts ──────────────────────────────────────────────────────
-  { "<leader>bd", "<cmd>bdelete<CR>",   desc = "Delete buffer" },
-  { "<leader>bn", "<cmd>bnext<CR>",     desc = "Next buffer" },
-  { "<leader>bp", "<cmd>bprevious<CR>", desc = "Prev buffer" },
-  { "<leader>ba", "<cmd>ball<CR>",      desc = "Open all buffers" },
+  { "<leader>bc", function() Snacks.bufdelete() end,               desc = "Close buffer" },
+  { "<leader>bC", function() Snacks.bufdelete({ force = true }) end, desc = "Force close buffer" },
+  { "<leader>bo", function() Snacks.bufdelete.other() end,         desc = "Close other buffers" },
+  { "<leader>bO", function() Snacks.bufdelete.all() end,           desc = "Close all buffers" },
+  { "<leader>bl", function() Snacks.picker.buffers() end,          desc = "List buffers" },
+  { "<leader>bn", "<cmd>bnext<CR>",                                desc = "Next buffer" },
+  { "<leader>bp", "<cmd>bprevious<CR>",                            desc = "Prev buffer" },
 
   -- ── Terminal ──────────────────────────────────────────────────────────────
   -- Primary toggle is <C-/> (wired in plugins/snacks/terminal.lua).
@@ -250,3 +272,4 @@ wk.add({
     desc = "Prev diagnostic",
   },
 })
+

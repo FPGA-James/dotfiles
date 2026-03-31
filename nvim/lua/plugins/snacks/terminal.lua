@@ -14,10 +14,8 @@ return {
 
   win = {
     style    = "terminal",
-    border   = "rounded",
-    width    = 0.8,      -- fraction of editor width
-    height   = 0.8,      -- fraction of editor height
-    relative = "editor",
-    position = "float",  -- "float"|"bottom"|"top"|"left"|"right"
+    border   = "top",    -- ivy style: only a top border separating from editor
+    height   = 0.35,     -- fraction of editor height (ivy-style compact panel)
+    position = "bottom", -- full-width bottom panel, like the ivy picker
   },
 }

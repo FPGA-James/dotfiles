@@ -101,7 +101,7 @@ require("gitsigns").setup({
 
   -- ── Current-line blame ────────────────────────────────────────────────────
   -- Show git blame as virtual text at the end of the current line.
-  current_line_blame = false,
+  current_line_blame = true,
 
   current_line_blame_opts = {
     -- Show virtual text blame annotation.

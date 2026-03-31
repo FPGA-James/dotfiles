@@ -1,0 +1,137 @@
+# tmux-which-key config
+# Copy to ~/.config/tmux/plugins/tmux-which-key/config.yaml after TPM installs.
+# Rebuild after changes: prefix + Space (reopens the menu)
+
+command_alias_start_index: 200
+
+keybindings:
+  prefix_table: Space   # open menu: prefix + Space
+  root_table: C-Space   # open menu: C-Space (no prefix needed)
+
+position:
+  x: R   # align right
+  y: P   # align to pane bottom
+
+items:
+  # ── Panes ──────────────────────────────────────────────────────────────────
+  - name: +panes
+    key: p
+    menu:
+      - name: split right
+        key: v
+        command: "split-window -h -c '#{pane_current_path}'"
+      - name: split down
+        key: s
+        command: "split-window -v -c '#{pane_current_path}'"
+      - separator: true
+      - name: go left
+        key: h
+        command: "select-pane -L"
+        transient: true
+      - name: go down
+        key: j
+        command: "select-pane -D"
+        transient: true
+      - name: go up
+        key: k
+        command: "select-pane -U"
+        transient: true
+      - name: go right
+        key: l
+        command: "select-pane -R"
+        transient: true
+      - separator: true
+      - name: zoom toggle
+        key: z
+        command: "resize-pane -Z"
+      - name: swap prev
+        key: "{"
+        command: "swap-pane -U"
+      - name: swap next
+        key: "}"
+        command: "swap-pane -D"
+      - name: show numbers
+        key: q
+        command: "display-panes"
+      - name: kill pane
+        key: x
+        command: "confirm-before -p 'kill pane? (y/n)' kill-pane"
+
+  # ── Windows ────────────────────────────────────────────────────────────────
+  - name: +windows
+    key: w
+    menu:
+      - name: new window
+        key: c
+        command: "new-window -c '#{pane_current_path}'"
+      - name: rename window
+        key: r
+        command: "command-prompt -I '#W' 'rename-window -- %%'"
+      - separator: true
+      - name: next window
+        key: n
+        command: "next-window"
+        transient: true
+      - name: prev window
+        key: p
+        command: "previous-window"
+        transient: true
+      - name: last window
+        key: l
+        command: "last-window"
+      - name: window list
+        key: w
+        command: "choose-window"
+      - separator: true
+      - name: kill window
+        key: x
+        command: "confirm-before -p 'kill window? (y/n)' kill-window"
+
+  # ── Sessions ───────────────────────────────────────────────────────────────
+  - name: +sessions
+    key: s
+    menu:
+      - name: sessionx picker
+        key: o
+        command: "run-shell '~/.config/tmux/plugins/tmux-sessionx/tmux_sessionx.tmux'"
+      - name: new session
+        key: n
+        command: "new-session"
+      - name: rename session
+        key: r
+        command: "command-prompt -I '#S' 'rename-session -- %%'"
+      - name: list sessions
+        key: l
+        command: "choose-tree -s"
+      - name: detach
+        key: d
+        command: "detach-client"
+      - separator: true
+      - name: kill session
+        key: x
+        command: "confirm-before -p 'kill session? (y/n)' kill-session"
+
+  # ── Copy / scroll ──────────────────────────────────────────────────────────
+  - name: +copy
+    key: c
+    menu:
+      - name: copy mode
+        key: "["
+        command: "copy-mode"
+      - name: paste buffer
+        key: "]"
+        command: "paste-buffer"
+      - name: show buffers
+        key: b
+        command: "choose-buffer"
+
+  # ── Misc ───────────────────────────────────────────────────────────────────
+  - name: reload config
+    key: r
+    command: "source-file ~/.config/tmux/tmux.conf"
+  - name: clock
+    key: t
+    command: "clock-mode"
+  - name: list keys
+    key: "?"
+    command: "list-keys"

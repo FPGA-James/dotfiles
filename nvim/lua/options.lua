@@ -10,6 +10,9 @@ local opt = vim.opt
 -- -- Leader
 vim.g.mapleader = " "
 
+-- ── Plugin globals (toggled at runtime) ───────────────────────────────────────
+vim.g.conform_format_on_save = false  -- toggled with <leader>uf
+
 -- ── Appearance ────────────────────────────────────────────────────────────────
 opt.number         = false          -- show absolute line numbers
 opt.relativenumber = true          -- show relative line numbers
@@ -21,8 +24,7 @@ opt.ruler          = true           -- show cursor position in statusline
 opt.showcmd        = true           -- show partial command in last line
 opt.showmode       = true           -- show -- INSERT -- etc. in last line
 opt.laststatus     = 2              -- 0=never 1=only if split 2=always 3=global
-opt.cmdheight      = 1             
--- number of lines for the command area
+opt.cmdheight      = 1              -- number of lines for the command area
 opt.pumheight      = 0              -- max items in popup menu (0 = unlimited)
 opt.pumblend       = 0              -- popup-menu transparency 0-100
 opt.winblend       = 0              -- floating-window transparency 0-100
@@ -108,7 +110,7 @@ opt.ttimeout       = true           -- time out on key codes
 opt.ttimeoutlen    = 50             -- ms to wait for a key code sequence to complete
 
 -- ── Clipboard ────────────────────────────────────────────────────────────────
-opt.clipboard      = ""             -- "" = don't sync; "unnamedplus" = use system clipboard
+opt.clipboard      = "unnamedplus"  -- sync with system clipboard (macOS: pbcopy/pbpaste)
 
 -- ── Spell ─────────────────────────────────────────────────────────────────────
 opt.spell          = false          -- spell checking

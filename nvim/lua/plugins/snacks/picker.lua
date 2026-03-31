@@ -37,8 +37,8 @@ map("n", "<leader>fu",      function() Snacks.picker.undo() end,           { des
 
 -- Git
 map("n", "<leader>gc", function() Snacks.picker.git_log() end,             { desc = "Git log" })
-map("n", "<leader>gs", function() Snacks.picker.git_status() end,          { desc = "Git status" })
-map("n", "<leader>gS", function() Snacks.picker.git_stash() end,           { desc = "Git stash" })
+map("n", "<leader>gf", function() Snacks.picker.git_status() end,          { desc = "Git status (files)" })
+map("n", "<leader>gZ", function() Snacks.picker.git_stash() end,           { desc = "Git stash" })
 map("n", "<leader>gd", function() Snacks.picker.git_diff() end,            { desc = "Git diff (hunks)" })
 map("n", "<leader>gL", function() Snacks.picker.git_log_line() end,        { desc = "Git log (line)" })
 
@@ -57,7 +57,7 @@ return {
 
   -- ── Prompt position ───────────────────────────────────────────────────────
   -- "top" | "bottom"
-  prompt = "top",
+  prompt = ">",
 
   -- Layout preset.
   -- "default" | "telescope" | "vscode" | "ivy" | "sidebar" | "select"
@@ -142,6 +142,10 @@ return {
     buffers = {
       -- Show all buffers, including hidden ones.
       current = true,
+    },
+    explorer = {
+      -- Pin the sidebar to the right edge.
+      layout = { layout = { position = "right" } },
     },
   },
 }

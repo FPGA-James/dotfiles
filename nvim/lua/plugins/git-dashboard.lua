@@ -21,7 +21,7 @@ require("git-dashboard-nvim").setup({
   use_current_branch           = true,
   title                        = "repo_name",
   show_current_branch          = true,
-  filled_squares               = { "▪", "▪", "▪", "▪", "▪" },
+  filled_squares               = { "▪", "▪", "▪", "▪", "▪", "▪" },
   empty_square                 = "▫",
   gap                          = " ",
 })

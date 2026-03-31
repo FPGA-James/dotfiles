@@ -84,6 +84,5 @@ format = "[$symbol]($style)"
 
 [time]
 disabled = false
-symbol = "⌚"
 style = "bold white"
-format = "[$symbol$time]($style)"
+format = "[⌚$time]($style)"
