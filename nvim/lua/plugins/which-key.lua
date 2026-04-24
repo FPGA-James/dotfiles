@@ -272,21 +272,7 @@ wk.add({
     desc = "Prev diagnostic",
   },
 
-  -- ── Claude Code ────────────────────────────────────────────────────────────
-  {
-    "<leader>ac",
-    desc = "Toggle Claude Code terminal",
-  },
-  {
-    "<leader>aR",
-    desc = "Resume last Claude conversation",
-  },
-  {
-    "<leader>aV",
-    desc = "Claude Code (verbose)",
-  },
-
-  -- ── Minuet AI ──────────────────────────────────────────────────────────────
+  -- ── Minuet AI ─────────────────────────────────────────────────────────────
   {
     "<leader>am",
     function() require("minuet.virtualtext").action.toggle_auto_trigger() end,
@@ -295,7 +281,7 @@ wk.add({
   {
     "<leader>aM",
     function() require("minuet.duet").action.predict() end,
-    desc = "Minuet: duet (full preview)",
+    desc = "Minuet: complete (manual)",
   },
 })
 
