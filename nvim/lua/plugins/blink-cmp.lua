@@ -20,7 +20,7 @@ require("blink.cmp").setup({
   -- "default": <C-n>/<C-p> navigate, <C-y> accept, <C-e> cancel
   -- "super-tab": <Tab>/<S-Tab> navigate, <CR> accept
   -- "enter": <CR> accept, <C-n>/<C-p> navigate
-  keymap = { preset = "default" },
+  keymap = { preset = "super-tab" },
 
   -- ── Appearance ────────────────────────────────────────────────────────────
   appearance = {
@@ -31,12 +31,21 @@ require("blink.cmp").setup({
   -- ── Sources ───────────────────────────────────────────────────────────────
   sources = {
     -- Ordered list of active sources for normal buffers.
-    default = { "lsp", "path", "snippets", "buffer" },
+    default = { "lsp", "path", "snippets", "buffer", "minuet" },
 
     -- In markdown buffers also complete [[wikilinks]], #tags, and new note titles
     -- via the obsidian.nvim community fork's built-in blink sources.
     per_filetype = {
-      markdown = { "obsidian", "obsidian_tags", "obsidian_new", "lsp", "path", "snippets", "buffer" },
+      markdown = { "obsidian", "obsidian_tags", "obsidian_new", "lsp", "path", "snippets", "buffer", "minuet" },
+    },
+
+    -- Custom provider configuration for minuet AI completions.
+    providers = {
+      minuet = {
+        name   = "minuet",
+        module = "minuet.blink",
+        score_offset = -3,
+      },
     },
   },
 
