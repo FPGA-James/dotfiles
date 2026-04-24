@@ -271,5 +271,31 @@ wk.add({
     function() vim.diagnostic.jump({ count = -1, float = true }) end,
     desc = "Prev diagnostic",
   },
+
+  -- ── Claude Code ────────────────────────────────────────────────────────────
+  {
+    "<leader>ac",
+    desc = "Toggle Claude Code terminal",
+  },
+  {
+    "<leader>aR",
+    desc = "Resume last Claude conversation",
+  },
+  {
+    "<leader>aV",
+    desc = "Claude Code (verbose)",
+  },
+
+  -- ── Minuet AI ──────────────────────────────────────────────────────────────
+  {
+    "<leader>am",
+    function() require("minuet.virtualtext").action.toggle_auto_trigger() end,
+    desc = "Minuet: toggle auto-suggest",
+  },
+  {
+    "<leader>aM",
+    function() require("minuet.duet").action.predict() end,
+    desc = "Minuet: duet (full preview)",
+  },
 })
 
