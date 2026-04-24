@@ -43,7 +43,6 @@ require("minuet").setup({
       api_key   = "TERM",  -- Ollama ignores auth; any non-empty value is fine
       optional  = {
         max_tokens = 256,  -- max tokens per completion
-        stop       = nil,
       },
     },
   },
