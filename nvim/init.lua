@@ -29,6 +29,7 @@ require("colorschemes")
 -- ── 4. Plugins ────────────────────────────────────────────────────────────────
 require("plugins.treesitter")
 require("plugins.blink-cmp")
+require("plugins.minuet-ai")
 require("plugins.lualine")
 require("plugins.neotest")
 require("plugins.gitsigns")
