@@ -74,3 +74,4 @@ eval "$(starship init zsh)"
 eval "$(atuin init zsh)"
 
 . "$HOME/.local/share/../bin/env"
+export PATH=$PATH:$HOME/go/bin

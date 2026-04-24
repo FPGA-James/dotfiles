@@ -76,14 +76,14 @@ require("claude-code").setup({
   keymaps = {
     toggle = {
       -- Main toggle: open/close the Claude Code terminal.
-      -- Mapped under <leader>a to match the AI group in which-key.
-      normal   = "<leader>ac",
-      terminal = "<leader>ac",
+      -- Mapped under <leader>c to match the AI group in which-key.
+      normal   = "<leader>cc",
+      terminal = "<leader>cc",
 
       -- Variant keymaps (normal mode only).
       variants = {
-        continue = "<leader>aR", -- resume most recent conversation
-        verbose  = "<leader>aV", -- launch with verbose output
+        continue = "<leader>cR", -- resume most recent conversation
+        verbose  = "<leader>cV", -- launch with verbose output
       },
     },
     -- <C-h/j/k/l> navigation out of the terminal window.

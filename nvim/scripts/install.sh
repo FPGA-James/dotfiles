@@ -39,6 +39,8 @@ clone "blink.cmp"           "https://github.com/saghen/blink.cmp"
 clone "minuet-ai.nvim"      "https://github.com/milanglacier/minuet-ai.nvim"
 clone "nvim-treesitter"     "https://github.com/nvim-treesitter/nvim-treesitter"
 clone "render-markdown.nvim" "https://github.com/MeanderingProgrammer/render-markdown.nvim"
+clone "md-agenda.nvim"      "https://github.com/zenarvus/md-agenda.nvim"
+clone "neogit.nvim"         "https://github.com/NeogitOrg/neogit"
 
 echo ""
 echo "── Colorschemes ─────────────────────────────────────────────────────────"

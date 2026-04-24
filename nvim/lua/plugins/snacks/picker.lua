@@ -146,6 +146,10 @@ return {
     explorer = {
       -- Pin the sidebar to the right edge.
       layout = { layout = { position = "right" } },
+      -- Show hidden (dot) files and git-ignored files by default.
+      -- Toggle at runtime with <a-h> (hidden) and <a-i> (ignored).
+      hidden  = true,
+      ignored = true,
     },
   },
 }

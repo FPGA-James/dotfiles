@@ -36,7 +36,7 @@ require("minuet").setup({
   -- ── Provider options ──────────────────────────────────────────────────────
   provider_options = {
     openai_fim_compatible = {
-      model     = "qwen2.5-coder:latest",
+      model     = "qwen2.5-coder:7b",
       stream    = true,
       end_point = "http://localhost:11434/v1/completions",
       name      = "Ollama",

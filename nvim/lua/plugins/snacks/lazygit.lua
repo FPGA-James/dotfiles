@@ -11,7 +11,7 @@
 -- ── Keymaps ───────────────────────────────────────────────────────────────────
 vim.keymap.set("n", "<leader>gg", function() Snacks.lazygit() end,
   { desc = "Lazygit (repo root)" })
-vim.keymap.set("n", "<leader>gf", function() Snacks.lazygit.log_file() end,
+vim.keymap.set("n", "<leader>gF", function() Snacks.lazygit.log_file() end,
   { desc = "Lazygit log (current file)" })
 vim.keymap.set("n", "<leader>gl", function() Snacks.lazygit.log() end,
   { desc = "Lazygit log (cwd)" })

@@ -151,7 +151,8 @@ wk.add({
   { "<leader><leader>", function() Snacks.picker.files() end, desc = "Find files" },
 
   -- ── Groups ────────────────────────────────────────────────────────────────
-  { "<leader>a",  group = "ai / claude" },
+  { "<leader>a",  group = "agenda" },
+  { "<leader>c",  group = "ai / claude" },
   { "<leader>d",  group = "diff preview" },
   { "<leader>o",  group = "obsidian" },
   { "<leader>b",  group = "buffers" },
@@ -274,12 +275,12 @@ wk.add({
 
   -- ── Minuet AI ─────────────────────────────────────────────────────────────
   {
-    "<leader>am",
+    "<leader>cm",
     function() require("minuet.virtualtext").action.toggle_auto_trigger() end,
     desc = "Minuet: toggle auto-suggest",
   },
   {
-    "<leader>aM",
+    "<leader>cM",
     function() require("minuet.duet").action.predict() end,
     desc = "Minuet: complete (manual)",
   },
