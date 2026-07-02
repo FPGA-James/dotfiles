@@ -30,6 +30,11 @@ nvim                         # on first launch: treesitter parsers auto-download
                              # blink.cmp fetches its Rust binary automatically
 ```
 
+No `git`, or on Windows? `scripts/install.ps1` does the same setup by downloading
+each plugin's repo as a zip instead of cloning (`pwsh -File scripts/install.ps1`).
+`scripts/download-plugins.ps1` is the trimmed-down version — just the plugin/colorscheme
+downloads, no Sigasi launcher or LSP-binary steps.
+
 Then inside Neovim:
 
 ```
@@ -93,6 +98,8 @@ module self-contained with its own keymaps.
 |---|---|
 | [gitsigns.nvim](https://github.com/lewis6991/gitsigns.nvim) | Inline diff signs, hunk staging/reset, blame, word diff |
 | [git-dashboard-nvim](https://github.com/juansalvatore/git-dashboard-nvim) | Git contribution heatmap on the dashboard |
+| [diffview.nvim](https://github.com/sindrets/diffview.nvim) | Side-by-side diff and file-history viewer |
+| [neogit.nvim](https://github.com/NeogitOrg/neogit) | Magit-inspired status/stage/commit buffer; reuses diffview.nvim for diffs |
 
 ### Markdown / Notes
 
@@ -100,6 +107,7 @@ module self-contained with its own keymaps.
 |---|---|
 | [obsidian.nvim](https://github.com/epwalsh/obsidian.nvim) | Obsidian vault integration — wikilinks, daily notes, backlinks, tags, templates |
 | [render-markdown.nvim](https://github.com/MeanderingProgrammer/render-markdown.nvim) | In-editor markdown rendering — headings, code blocks, checkboxes, tables, bullets |
+| [md-agenda.nvim](https://github.com/zenarvus/md-agenda.nvim) | Org-agenda-inspired task/habit management over markdown files (requires ripgrep) |
 
 ### Testing
 
